@@ -17,10 +17,25 @@
                         <small>Author</small>
                     </h1>
                     <div class="col-xs-6">
-                        <form action="" method="post">
+						<?php
+						if (isset($_POST['submit'])) {
+							$cat_title = $_POST['cat_title'];
+							if ($cat_title === '' || empty($cat_title)) {
+								echo ' <p class="text-muted">Please enter the name of category</p>';
+							} else {
+								$cat_title = $db->quote($cat_title);
+								$add_query = 'INSERT INTO categories(cat_title) ' . "VALUE({$cat_title})";
+								$create_category_query = $db->query($add_query);
+								if (!$create_category_query) {
+									die('Query Failed');
+								}
+							}
+						}
+						?>
+                        <form action="categories.php" method="post">
                             <div class="form-group">
                                 <label for="cat_title"> Category Title </label>
-                                <input type="text" name="cate_title" class="form-control">
+                                <input type="text" name="cat_title" class="form-control">
                             </div>
                             <div class="form-group">
                                 <input type="submit" name="submit" class="btn btn-primary" value="Add Category">
@@ -30,7 +45,7 @@
 
                     <div class="col-xs-6">
 						<?php
-						$query = "SELECT * FROM categories";
+						$query = 'SELECT * FROM categories';
 						$select_categories = $db->query($query);
 						?>
                         <table class="table table-bordered table-hover">
@@ -67,4 +82,4 @@
 </div>
 <!-- /#wrapper -->
 
-<?php include 'includes/admin_footer.php' ?>
+<?php include 'includes / admin_footer . php' ?>
