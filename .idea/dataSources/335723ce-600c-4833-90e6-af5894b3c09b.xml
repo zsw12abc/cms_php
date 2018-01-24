@@ -908,7 +908,7 @@
     <table id="227" parent="2" name="users">
       <Engine>InnoDB</Engine>
     </table>
-    <table id="228" parent="3" name="category">
+    <table id="228" parent="3" name="categories">
       <Engine>InnoDB</Engine>
     </table>
     <view id="229" parent="4" name="CHARACTER_SETS">

@@ -19,9 +19,3 @@ foreach ($database as $key => $value) {
 
 $db = new PDO(DSN, USERNAME, PASSWORD);
 $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-if ($db) {
-	echo 'connected';
-} else {
-	echo 'failed';
-}
