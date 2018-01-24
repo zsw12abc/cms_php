@@ -1,9 +1,9 @@
-<?php include 'includes/header.php'; ?>
+<?php include 'includes/admin_header.php'; ?>
 
 <div id="wrapper">
 
     <!-- Navigation -->
-	<?php include 'includes/navigation.php' ?>
+	<?php include 'includes/admin_navigation.php' ?>
 
     <div id="page-wrapper">
 
@@ -29,6 +29,10 @@
                     </div>
 
                     <div class="col-xs-6">
+						<?php
+						$query = "SELECT * FROM categories";
+						$select_categories = $db->query($query);
+						?>
                         <table class="table table-bordered table-hover">
                             <thead>
                             <tr>
@@ -37,14 +41,16 @@
                             </tr>
                             </thead>
                             <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>Swift</td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>PHP</td>
-                            </tr>
+							<?php
+							while ($row = $select_categories->fetch()) :
+								$cat_id = $row['cat_id'];
+								$cat_title = $row['cat_title'];
+								?>
+                                <tr>
+                                    <td><?php echo $cat_id ?></td>
+                                    <td><?php echo $cat_title ?></td>
+                                </tr>
+							<?php endwhile; ?>
                             </tbody>
                         </table>
                     </div>
@@ -61,4 +67,4 @@
 </div>
 <!-- /#wrapper -->
 
-<?php include 'includes/footer.php' ?>
+<?php include 'includes/admin_footer.php' ?>
