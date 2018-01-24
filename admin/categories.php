@@ -47,12 +47,22 @@
 						<?php
 						$query = 'SELECT * FROM categories';
 						$select_categories = $db->query($query);
+
+						if (isset($_GET['delete'])) {
+							$delete_cat_id = $_GET['delete'];
+							$delete_query = 'DELETE FROM categories WHERE cat_id = ' . $delete_cat_id;
+//							echo $delete_query;
+							$delete_category_query = $db->query($delete_query);
+							//refresh the page
+							header('Location: categories.php');
+						}
 						?>
                         <table class="table table-bordered table-hover">
                             <thead>
                             <tr>
                                 <th>ID</th>
                                 <th>Category Title</th>
+                                <th>Delete</th>
                             </tr>
                             </thead>
                             <tbody>
@@ -64,6 +74,7 @@
                                 <tr>
                                     <td><?php echo $cat_id ?></td>
                                     <td><?php echo $cat_title ?></td>
+                                    <td><a href='categories.php?delete=<?php echo $cat_id ?>'>Delete</a></td>
                                 </tr>
 							<?php endwhile; ?>
                             </tbody>
