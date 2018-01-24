@@ -34,13 +34,16 @@
 						?>
                         <form action="categories.php" method="post">
                             <div class="form-group">
-                                <label for="cat_title"> Category Title </label>
+                                <label for="cat_title"> Add Category </label>
                                 <input type="text" name="cat_title" class="form-control">
                             </div>
                             <div class="form-group">
                                 <input type="submit" name="submit" class="btn btn-primary" value="Add Category">
                             </div>
                         </form>
+
+                        <!--UPDATE CATEGORIES-->
+						<?php include 'includes/update_categories.php'; ?>
                     </div>
 
                     <div class="col-xs-6">
@@ -75,6 +78,7 @@
                                     <td><?php echo $cat_id ?></td>
                                     <td><?php echo $cat_title ?></td>
                                     <td><a href='categories.php?delete=<?php echo $cat_id ?>'>Delete</a></td>
+                                    <td><a href='categories.php?edit=<?php echo $cat_id ?>'>Edit</a></td>
                                 </tr>
 							<?php endwhile; ?>
                             </tbody>
