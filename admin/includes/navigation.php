@@ -46,11 +46,11 @@
                     </li>
                 </ul>
             </li>
-            <li>
-                <a href="bootstrap-grid.html"><i class="fa fa-fw fa-wrench"></i> Categories </a>
+            <li class="active">
+                <a href="categories.php"><i class="fa fa-fw fa-wrench"></i> Categories </a>
             </li>
 
-            <li class="active">
+            <li>
                 <a href="blank-page.html"><i class="fa fa-fw fa-file"></i> Comments </a>
             </li>
             <li>
