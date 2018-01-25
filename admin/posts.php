@@ -16,37 +16,22 @@
                         Welcome To Dashboard
                         <small>Author</small>
                     </h1>
-                    <table class="table table-bordered table-hover">
-                        <thead>
-                        <tr>
-                            <th>Id</th>
-                            <th>Title</th>
-                            <th>Author</th>
-                            <th>Category</th>
-                            <th>Status</th>
-                            <th>Image</th>
-                            <th>Tags</th>
-                            <th>Comments</th>
-                            <th>Date</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <?php
-						if (isset($_GET['source'])) {
-							$source = $_GET['source'];
-						} else {
-							$source = '';
-						}
-						switch ($source) {
-							case '200':
-								echo $source;
-								break;
-							default:
-								include 'view_all_posts.php';
-                        }
-						?>
-                        </tbody>
-                    </table>
+
+					<?php
+					if (isset($_GET['source'])) {
+						$source = $_GET['source'];
+					} else {
+						$source = '';
+					}
+					switch ($source) {
+						case 'add_post':
+							include 'includes/add_post.php';
+							break;
+						default:
+							include 'includes/view_all_posts.php';
+					}
+					?>
+
 
                 </div>
             </div>
