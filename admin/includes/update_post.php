@@ -10,7 +10,7 @@ if (isset($_GET['id'])) {
 	$post_author = $row['post_author'];
 	$post_category_id = $row['post_category_id'];
 	$post_status = $row['post_status'];
-	$post_image = $row['post_image'];
+	$image = $row['post_image'];
 	$post_tags = $row['post_tags'];
 	$post_content = $row['post_content'];
 	$post_date = date('d-m-y');
@@ -23,19 +23,29 @@ if (isset($_POST['update_post'])) {
 	$post_category_id = $_POST['post_category_id'];
 	$post_status = $_POST['post_status'];
 	$post_tags = $_POST['post_tags'];
+	$post_image = $_FILES['image']['name'];
+	$post_image_temp = $_FILES['image']['tmp_name'];
 	$post_content = $_POST['post_content'];
 	$post_date = date('d-m-y');
 	$post_comment_count = 0;
 
-	$image = file_exists($_FILES['image']['name']) ? $_FILES['image']['name'] : $post_image;
-	echo $image;
+	move_uploaded_file($post_image_temp, "../images/$post_image");
+	if (empty($post_image)) {
+		$post_image = $image;
+	}
 
-//	move_uploaded_file($post_image_temp, "../images/$post_image");
-//
-//	$add_posts_query = "INSERT INTO posts(post_category_id, post_title, post_author, post_date, post_image, post_content, post_tags, post_comment_count, post_status)"
-//		. "VALUES('{$post_category_id}', '{$post_title}', '{$post_author}', now(), '{$post_image}', '{$post_content}', '{$post_tags}', '{$post_comment_count}', '{$post_status}')";
-//	$add_posts = $db->query($add_posts_query);
-//	confirmQuery($add_posts);
+	$update_posts_query = "UPDATE posts SET 
+post_category_id = '{$post_category_id}', 
+post_title='{$post_title}', 
+post_author='{$post_author}', 
+post_date = now(), 
+post_image='{$post_image}', 
+post_content='{$post_content}', 
+post_tags = '{$post_tags}', post_comment_count = '{$post_comment_count}', post_status = '{$post_status}' 
+WHERE post_id = {$post_id}";
+//	echo $update_posts_query;
+	$update_posts = $db->query($update_posts_query);
+	confirmQuery($update_posts);
 }
 ?>
 
@@ -50,7 +60,7 @@ if (isset($_POST['update_post'])) {
     </div>
     <div class="form-group">
         <label for="post_category_id">Post Category ID</label>
-        <select class="form-control" id="post_category_id">
+        <select class="form-control" id="post_category_id" name="post_category_id">
 			<?php
 			$update_query = 'SELECT * FROM categories';
 			$update_categories = $db->query($update_query);
@@ -74,7 +84,8 @@ if (isset($_POST['update_post'])) {
         <input type="text" class="form-control" name="post_status" value="<?php echo $post_status ?>">
     </div>
     <div class="form-group">
-        <img src="../images/<?php echo $post_image; ?> " alt="image" width="100">
+        <img src="../images/<?php echo $image; ?> " alt="image" width="100">
+        <input type="file" name="image">
     </div>
     <div class="form-group">
         <label for="post_tags">Post Tags</label>
