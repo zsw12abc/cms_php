@@ -16,9 +16,7 @@ if (isset($_POST['create_post'])) {
 	$add_posts_query = "INSERT INTO posts(post_category_id, post_title, post_author, post_date, post_image, post_content, post_tags, post_comment_count, post_status)"
 		. "VALUES('{$post_category_id}', '{$post_title}', '{$post_author}', now(), '{$post_image}', '{$post_content}', '{$post_tags}', '{$post_comment_count}', '{$post_status}')";
 	$add_posts = $db->query($add_posts_query);
-	if (!$add_posts) {
-		die('Add Posts Failed');
-	}
+	confirmQuery($add_posts);
 }
 ?>
 

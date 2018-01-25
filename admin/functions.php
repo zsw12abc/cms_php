@@ -6,6 +6,12 @@
  * Time: 下午2:24
  */
 
+function confirmQuery($query){
+	if (!$query) {
+		die('Query Failed');
+	}
+}
+
 function insert_categories()
 {
 	global $db;
