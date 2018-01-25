@@ -31,7 +31,20 @@ if (isset($_POST['create_post'])) {
     </div>
     <div class="form-group">
         <label for="post_category_id">Post Category ID</label>
-        <input type="text" class="form-control" name="post_category_id">
+        <select class="form-control" id="post_category_id" name="post_category_id">
+			<?php
+			$categories_query = 'SELECT * FROM categories';
+			$get_categories = $db->query($categories_query);
+			confirmQuery($categories_query);
+			while ($row = $get_categories->fetch()) :
+				$cat_id = $row['cat_id'];
+				$cat_title = $row['cat_title'];
+				?>
+                <option value="<?php echo $cat_id; ?>"><?php echo $cat_title; ?></option>
+			<?php
+			endwhile;
+			?>
+        </select>
     </div>
     <div class="form-group">
         <label for="post_status">Post Status</label>
