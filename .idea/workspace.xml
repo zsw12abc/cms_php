@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e6f46337-3123-4e56-aa4e-e649d069ca87" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/admin/includes/add_post.php" />
+    <list default="true" id="e6f46337-3123-4e56-aa4e-e649d069ca87" name="Default" comment="add addposts fun">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/admin/includes/admin_navigation.php" afterPath="$PROJECT_DIR$/admin/includes/admin_navigation.php" />
-      <change beforePath="$PROJECT_DIR$/admin/posts.php" afterPath="$PROJECT_DIR$/admin/posts.php" />
-      <change beforePath="$PROJECT_DIR$/admin/view_all_posts.php" afterPath="$PROJECT_DIR$/admin/includes/view_all_posts.php" />
+      <change beforePath="$PROJECT_DIR$/admin/includes/add_post.php" afterPath="$PROJECT_DIR$/admin/includes/add_post.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -106,18 +103,30 @@
       <file leaf-file-name="add_post.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/admin/includes/add_post.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="66" lean-forward="true" selection-start-line="28" selection-start-column="66" selection-end-line="28" selection-end-column="66" />
+            <state relative-caret-position="372">
+              <caret line="25" column="28" lean-forward="true" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
               <folding>
-                <marker date="1516859973131" expanded="true" signature="558:1842" ph="..." />
-                <marker date="1516859973131" expanded="true" signature="587:716" ph="..." />
-                <marker date="1516859973131" expanded="true" signature="745:877" ph="..." />
-                <marker date="1516859973131" expanded="true" signature="906:1053" ph="..." />
-                <marker date="1516859973131" expanded="true" signature="1082:1214" ph="..." />
-                <marker date="1516859973131" expanded="true" signature="1243:1346" ph="..." />
-                <marker date="1516859973131" expanded="true" signature="1375:1501" ph="..." />
-                <marker date="1516859973131" expanded="true" signature="1530:1699" ph="..." />
-                <marker date="1516859973131" expanded="true" signature="1728:1833" ph="..." />
+                <marker date="1516861306391" expanded="true" signature="515:656" ph="INSERT INTO posts... " />
+                <marker date="1516861306391" expanded="true" signature="515:661" ph="INSERT INTO posts... " />
+                <marker date="1516861306391" expanded="true" signature="515:694" ph="INSERT INTO posts... " />
+                <marker date="1516861306391" expanded="true" signature="515:711" ph="INSERT INTO posts... " />
+                <marker date="1516861306391" expanded="true" signature="515:728" ph="INSERT INTO posts... " />
+                <marker date="1516861306391" expanded="true" signature="515:736" ph="INSERT INTO posts... " />
+                <marker date="1516861306391" expanded="true" signature="515:753" ph="INSERT INTO posts... " />
+                <marker date="1516861306391" expanded="true" signature="515:772" ph="INSERT INTO posts... " />
+                <marker date="1516861306391" expanded="true" signature="515:788" ph="INSERT INTO posts... " />
+                <marker date="1516861306391" expanded="true" signature="515:813" ph="INSERT INTO posts... " />
+                <marker date="1516861306391" expanded="true" signature="515:829" ph="INSERT INTO posts... " />
+                <marker date="1516861306391" expanded="true" signature="515:830" ph="INSERT INTO posts... " />
+                <marker date="1516861306391" expanded="true" signature="991:2275" ph="..." />
+                <marker date="1516861306391" expanded="true" signature="1020:1149" ph="..." />
+                <marker date="1516861306391" expanded="true" signature="1178:1310" ph="..." />
+                <marker date="1516861306391" expanded="true" signature="1339:1486" ph="..." />
+                <marker date="1516861306391" expanded="true" signature="1515:1647" ph="..." />
+                <marker date="1516861306391" expanded="true" signature="1676:1779" ph="..." />
+                <marker date="1516861306391" expanded="true" signature="1808:1934" ph="..." />
+                <marker date="1516861306391" expanded="true" signature="1963:2132" ph="..." />
+                <marker date="1516861306391" expanded="true" signature="2161:2266" ph="..." />
               </folding>
             </state>
           </provider>
@@ -125,6 +134,15 @@
       </file>
       <file leaf-file-name="posts" pinned="false" current-in-tab="false">
         <entry file="das://table:/c303b512/335723ce-600c-4833-90e6-af5894b3c09b/cms.posts">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="categories" pinned="false" current-in-tab="false">
+        <entry file="das://table:/c303b512/335723ce-600c-4833-90e6-af5894b3c09b/cms.categories">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
               <filtering enabled="true" />
@@ -155,8 +173,8 @@
       <file leaf-file-name="functions.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="672">
-              <caret line="55" column="4" lean-forward="false" selection-start-line="55" selection-start-column="4" selection-end-line="55" selection-end-column="4" />
+            <state relative-caret-position="180">
+              <caret line="17" column="59" lean-forward="true" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="59" />
               <folding>
                 <marker date="1516857392559" expanded="true" signature="391:449" ph="INSERT INTO categories... " />
                 <marker date="1516857392559" expanded="true" signature="643:667" ph="SELECT * FRO... categories" />
@@ -174,22 +192,6 @@
               <folding>
                 <marker date="1516858919500" expanded="true" signature="430:449" ph="SELECT * FRO... posts" />
                 <marker date="1516858919500" expanded="true" signature="934:974" ph="SELECT * FRO... categories" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="update_categories.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/includes/update_categories.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="18" column="53" lean-forward="true" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
-              <folding>
-                <marker date="1516853159365" expanded="true" signature="171:211" ph="SELECT * FRO... categories" />
-                <marker date="1516853159365" expanded="true" signature="1294:1327" ph="UPDATE categories... " />
-                <marker date="1516853159365" expanded="true" signature="1294:1364" ph="UPDATE categories... " />
-                <marker date="1516853159365" expanded="true" signature="1294:1365" ph="UPDATE categories... " />
-                <marker date="1516853159365" expanded="true" signature="1294:1369" ph="UPDATE categories... " />
               </folding>
             </state>
           </provider>
@@ -362,7 +364,7 @@
       <option name="presentableId" value="Default" />
       <updated>1516760338626</updated>
       <workItem from="1516760339790" duration="6400000" />
-      <workItem from="1516770237738" duration="23524000" />
+      <workItem from="1516770237738" duration="24525000" />
     </task>
     <task id="LOCAL-00001" summary="add image folder&#10;change html to php">
       <created>1516760746458</created>
@@ -504,11 +506,18 @@
       <option name="project" value="LOCAL" />
       <updated>1516857989986</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="create html form and add php move file method">
+      <created>1516860221934</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1516860221934</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29924000" />
+    <option name="totallyTimeSpent" value="30925000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
@@ -588,7 +597,8 @@
     <MESSAGE value="create html table for posts" />
     <MESSAGE value="import data into the form" />
     <MESSAGE value="swap posts pages" />
-    <option name="LAST_COMMIT_MESSAGE" value="swap posts pages" />
+    <MESSAGE value="create html form and add php move file method" />
+    <option name="LAST_COMMIT_MESSAGE" value="create html form and add php move file method" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -737,13 +747,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/c303b512/335723ce-600c-4833-90e6-af5894b3c09b/cms.categories">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/includes/admin_header.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -761,24 +764,6 @@
         <state relative-caret-position="330">
           <caret line="22" column="59" lean-forward="false" selection-start-line="22" selection-start-column="59" selection-end-line="22" selection-end-column="59" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/categories.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="34" column="42" lean-forward="true" selection-start-line="34" selection-start-column="42" selection-end-line="34" selection-end-column="42" />
-          <folding>
-            <marker date="1516853211687" expanded="true" signature="621:1110" ph="..." />
-            <marker date="1516853211687" expanded="true" signature="674:877" ph="..." />
-            <marker date="1516853211687" expanded="true" signature="930:1078" ph="..." />
-            <marker date="1516853211687" expanded="true" signature="1288:1301" ph="..." />
-            <marker date="1516853211687" expanded="true" signature="1288:1734" ph="..." />
-            <marker date="1516853211687" expanded="true" signature="1396:1734" ph="..." />
-            <marker date="1516853211687" expanded="true" signature="1432:1684" ph="..." />
-            <marker date="1516853211687" expanded="true" signature="1465:1647" ph="..." />
-            <marker date="1516853211687" expanded="true" signature="1720:1734" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -806,13 +791,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/c303b512/335723ce-600c-4833-90e6-af5894b3c09b/cms.posts">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/includes/navigation.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -828,18 +806,6 @@
         <state relative-caret-position="675">
           <caret line="45" column="25" lean-forward="true" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="55" column="4" lean-forward="false" selection-start-line="55" selection-start-column="4" selection-end-line="55" selection-end-column="4" />
-          <folding>
-            <marker date="1516857392559" expanded="true" signature="391:449" ph="INSERT INTO categories... " />
-            <marker date="1516857392559" expanded="true" signature="643:667" ph="SELECT * FRO... categories" />
-            <marker date="1516857392559" expanded="true" signature="1267:1305" ph="DELETE FROM categories... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -862,20 +828,76 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/admin/categories.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="34" column="42" lean-forward="true" selection-start-line="34" selection-start-column="42" selection-end-line="34" selection-end-column="42" />
+          <folding>
+            <marker date="1516853211687" expanded="true" signature="621:1110" ph="..." />
+            <marker date="1516853211687" expanded="true" signature="674:877" ph="..." />
+            <marker date="1516853211687" expanded="true" signature="930:1078" ph="..." />
+            <marker date="1516853211687" expanded="true" signature="1288:1301" ph="..." />
+            <marker date="1516853211687" expanded="true" signature="1288:1734" ph="..." />
+            <marker date="1516853211687" expanded="true" signature="1396:1734" ph="..." />
+            <marker date="1516853211687" expanded="true" signature="1432:1684" ph="..." />
+            <marker date="1516853211687" expanded="true" signature="1465:1647" ph="..." />
+            <marker date="1516853211687" expanded="true" signature="1720:1734" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="17" column="59" lean-forward="true" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="59" />
+          <folding>
+            <marker date="1516857392559" expanded="true" signature="391:449" ph="INSERT INTO categories... " />
+            <marker date="1516857392559" expanded="true" signature="643:667" ph="SELECT * FRO... categories" />
+            <marker date="1516857392559" expanded="true" signature="1267:1305" ph="DELETE FROM categories... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/c303b512/335723ce-600c-4833-90e6-af5894b3c09b/cms.categories">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/c303b512/335723ce-600c-4833-90e6-af5894b3c09b/cms.posts">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/admin/includes/add_post.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="66" lean-forward="true" selection-start-line="28" selection-start-column="66" selection-end-line="28" selection-end-column="66" />
+        <state relative-caret-position="372">
+          <caret line="25" column="28" lean-forward="true" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
           <folding>
-            <marker date="1516859973131" expanded="true" signature="558:1842" ph="..." />
-            <marker date="1516859973131" expanded="true" signature="587:716" ph="..." />
-            <marker date="1516859973131" expanded="true" signature="745:877" ph="..." />
-            <marker date="1516859973131" expanded="true" signature="906:1053" ph="..." />
-            <marker date="1516859973131" expanded="true" signature="1082:1214" ph="..." />
-            <marker date="1516859973131" expanded="true" signature="1243:1346" ph="..." />
-            <marker date="1516859973131" expanded="true" signature="1375:1501" ph="..." />
-            <marker date="1516859973131" expanded="true" signature="1530:1699" ph="..." />
-            <marker date="1516859973131" expanded="true" signature="1728:1833" ph="..." />
+            <marker date="1516861306391" expanded="true" signature="515:656" ph="INSERT INTO posts... " />
+            <marker date="1516861306391" expanded="true" signature="515:661" ph="INSERT INTO posts... " />
+            <marker date="1516861306391" expanded="true" signature="515:694" ph="INSERT INTO posts... " />
+            <marker date="1516861306391" expanded="true" signature="515:711" ph="INSERT INTO posts... " />
+            <marker date="1516861306391" expanded="true" signature="515:728" ph="INSERT INTO posts... " />
+            <marker date="1516861306391" expanded="true" signature="515:736" ph="INSERT INTO posts... " />
+            <marker date="1516861306391" expanded="true" signature="515:753" ph="INSERT INTO posts... " />
+            <marker date="1516861306391" expanded="true" signature="515:772" ph="INSERT INTO posts... " />
+            <marker date="1516861306391" expanded="true" signature="515:788" ph="INSERT INTO posts... " />
+            <marker date="1516861306391" expanded="true" signature="515:813" ph="INSERT INTO posts... " />
+            <marker date="1516861306391" expanded="true" signature="515:829" ph="INSERT INTO posts... " />
+            <marker date="1516861306391" expanded="true" signature="515:830" ph="INSERT INTO posts... " />
+            <marker date="1516861306391" expanded="true" signature="991:2275" ph="..." />
+            <marker date="1516861306391" expanded="true" signature="1020:1149" ph="..." />
+            <marker date="1516861306391" expanded="true" signature="1178:1310" ph="..." />
+            <marker date="1516861306391" expanded="true" signature="1339:1486" ph="..." />
+            <marker date="1516861306391" expanded="true" signature="1515:1647" ph="..." />
+            <marker date="1516861306391" expanded="true" signature="1676:1779" ph="..." />
+            <marker date="1516861306391" expanded="true" signature="1808:1934" ph="..." />
+            <marker date="1516861306391" expanded="true" signature="1963:2132" ph="..." />
+            <marker date="1516861306391" expanded="true" signature="2161:2266" ph="..." />
           </folding>
         </state>
       </provider>
