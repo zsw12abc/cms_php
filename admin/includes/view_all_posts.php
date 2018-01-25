@@ -59,6 +59,7 @@ if (isset($_GET['delete'])) {
             <td><?php echo $post_comment_count ?></td>
             <td><?php echo $post_date ?></td>
             <td><a href='posts.php?delete=<?php echo $post_id ?>'>Delete</td>
+            <td><a href='posts.php?source=edit_post&id=<?php echo $post_id ?>'>Edit</td>
         </tr>
 	<?php
 	endwhile;
