@@ -31,7 +31,20 @@
                         </tr>
                         </thead>
                         <tbody>
-						<?php display_posts() ?>
+                        <?php
+						if (isset($_GET['source'])) {
+							$source = $_GET['source'];
+						} else {
+							$source = '';
+						}
+						switch ($source) {
+							case '200':
+								echo $source;
+								break;
+							default:
+								include 'view_all_posts.php';
+                        }
+						?>
                         </tbody>
                     </table>
 
