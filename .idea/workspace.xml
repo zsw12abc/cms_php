@@ -194,31 +194,33 @@
       <file leaf-file-name="update_post.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/admin/includes/update_post.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="37" lean-forward="false" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
+            <state relative-caret-position="330">
+              <caret line="22" column="51" lean-forward="true" selection-start-line="22" selection-start-column="51" selection-end-line="22" selection-end-column="51" />
               <folding>
-                <marker date="1516877610199" expanded="true" signature="80:115" ph="SELECT * FRO... posts" />
-                <marker date="1516877610199" expanded="true" signature="80:116" ph="SELECT * FRO... posts" />
-                <marker date="1516877610199" expanded="true" signature="1093:1109" ph="UPDATE posts... " />
-                <marker date="1516877610199" expanded="true" signature="1093:1212" ph="UPDATE posts... " />
-                <marker date="1516877610199" expanded="true" signature="1093:1232" ph="UPDATE posts... " />
-                <marker date="1516877610199" expanded="true" signature="1093:1418" ph="UPDATE posts... " />
-                <marker date="1516877610199" expanded="true" signature="1093:1428" ph="UPDATE posts... " />
-                <marker date="1516877610199" expanded="true" signature="1093:1429" ph="UPDATE posts... " />
-                <marker date="1516877610199" expanded="true" signature="1093:1508" ph="UPDATE posts... " />
-                <marker date="1516877610199" expanded="true" signature="1099:1109" ph="INSERT INTO posts... " />
-                <marker date="1516877610199" expanded="true" signature="1605:2198" ph="..." />
-                <marker date="1516877610199" expanded="true" signature="1634:1797" ph="..." />
-                <marker date="1516877610199" expanded="true" signature="1826:1993" ph="..." />
-                <marker date="1516877610199" expanded="true" signature="2022:2198" ph="..." />
-                <marker date="1516877610199" expanded="true" signature="2169:2198" ph="..." />
-                <marker date="1516877610199" expanded="true" signature="2200:2224" ph="SELECT * FRO... categories" />
-                <marker date="1516877610199" expanded="true" signature="2703:2870" ph="..." />
-                <marker date="1516877610199" expanded="true" signature="2899:3028" ph="..." />
-                <marker date="1516877610199" expanded="true" signature="3057:3216" ph="..." />
-                <marker date="1516877610199" expanded="true" signature="3245:3459" ph="..." />
-                <marker date="1516877610199" expanded="true" signature="3382:3448" ph="..." />
-                <marker date="1516877610199" expanded="true" signature="3488:3592" ph="..." />
+                <marker date="1516877920484" expanded="true" signature="80:115" ph="SELECT * FRO... posts" />
+                <marker date="1516877920484" expanded="true" signature="80:116" ph="SELECT * FRO... posts" />
+                <marker date="1516877920484" expanded="true" signature="1062:1097" ph="SELECT * FRO... posts" />
+                <marker date="1516877920484" expanded="true" signature="1062:1098" ph="SELECT * FRO... posts" />
+                <marker date="1516877920484" expanded="true" signature="1237:1253" ph="UPDATE posts... " />
+                <marker date="1516877920484" expanded="true" signature="1237:1356" ph="UPDATE posts... " />
+                <marker date="1516877920484" expanded="true" signature="1237:1376" ph="UPDATE posts... " />
+                <marker date="1516877920484" expanded="true" signature="1237:1562" ph="UPDATE posts... " />
+                <marker date="1516877920484" expanded="true" signature="1237:1572" ph="UPDATE posts... " />
+                <marker date="1516877920484" expanded="true" signature="1237:1573" ph="UPDATE posts... " />
+                <marker date="1516877920484" expanded="true" signature="1237:1652" ph="UPDATE posts... " />
+                <marker date="1516877920484" expanded="true" signature="1243:1253" ph="INSERT INTO posts... " />
+                <marker date="1516877920484" expanded="true" signature="1749:2342" ph="..." />
+                <marker date="1516877920484" expanded="true" signature="1778:1941" ph="..." />
+                <marker date="1516877920484" expanded="true" signature="1970:2137" ph="..." />
+                <marker date="1516877920484" expanded="true" signature="2166:2342" ph="..." />
+                <marker date="1516877920484" expanded="true" signature="2313:2342" ph="..." />
+                <marker date="1516877920484" expanded="true" signature="2344:2368" ph="SELECT * FRO... categories" />
+                <marker date="1516877920484" expanded="true" signature="2847:3014" ph="..." />
+                <marker date="1516877920484" expanded="true" signature="3043:3177" ph="..." />
+                <marker date="1516877920484" expanded="true" signature="3206:3365" ph="..." />
+                <marker date="1516877920484" expanded="true" signature="3394:3608" ph="..." />
+                <marker date="1516877920484" expanded="true" signature="3531:3597" ph="..." />
+                <marker date="1516877920484" expanded="true" signature="3637:3741" ph="..." />
               </folding>
             </state>
           </provider>
@@ -395,7 +397,7 @@
       <option name="presentableId" value="Default" />
       <updated>1516760338626</updated>
       <workItem from="1516760339790" duration="6400000" />
-      <workItem from="1516770237738" duration="31640000" />
+      <workItem from="1516770237738" duration="31877000" />
     </task>
     <task id="LOCAL-00001" summary="add image folder&#10;change html to php">
       <created>1516760746458</created>
@@ -579,11 +581,18 @@
       <option name="project" value="LOCAL" />
       <updated>1516875749622</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="update post to database">
+      <created>1516877749196</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1516877749196</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38040000" />
+    <option name="totallyTimeSpent" value="38277000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
@@ -642,7 +651,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add cms database and category table" />
     <MESSAGE value="connect to database" />
     <MESSAGE value="restructure and make files reuseable" />
     <MESSAGE value="Inserting data into category table and display it" />
@@ -667,7 +675,8 @@
     <MESSAGE value="move check Query to function" />
     <MESSAGE value="DELETE POST function" />
     <MESSAGE value="upload post data display" />
-    <option name="LAST_COMMIT_MESSAGE" value="upload post data display" />
+    <MESSAGE value="update post to database" />
+    <option name="LAST_COMMIT_MESSAGE" value="update post to database" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -967,31 +976,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/includes/update_post.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="37" lean-forward="false" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
+        <state relative-caret-position="330">
+          <caret line="22" column="51" lean-forward="true" selection-start-line="22" selection-start-column="51" selection-end-line="22" selection-end-column="51" />
           <folding>
-            <marker date="1516877610199" expanded="true" signature="80:115" ph="SELECT * FRO... posts" />
-            <marker date="1516877610199" expanded="true" signature="80:116" ph="SELECT * FRO... posts" />
-            <marker date="1516877610199" expanded="true" signature="1093:1109" ph="UPDATE posts... " />
-            <marker date="1516877610199" expanded="true" signature="1093:1212" ph="UPDATE posts... " />
-            <marker date="1516877610199" expanded="true" signature="1093:1232" ph="UPDATE posts... " />
-            <marker date="1516877610199" expanded="true" signature="1093:1418" ph="UPDATE posts... " />
-            <marker date="1516877610199" expanded="true" signature="1093:1428" ph="UPDATE posts... " />
-            <marker date="1516877610199" expanded="true" signature="1093:1429" ph="UPDATE posts... " />
-            <marker date="1516877610199" expanded="true" signature="1093:1508" ph="UPDATE posts... " />
-            <marker date="1516877610199" expanded="true" signature="1099:1109" ph="INSERT INTO posts... " />
-            <marker date="1516877610199" expanded="true" signature="1605:2198" ph="..." />
-            <marker date="1516877610199" expanded="true" signature="1634:1797" ph="..." />
-            <marker date="1516877610199" expanded="true" signature="1826:1993" ph="..." />
-            <marker date="1516877610199" expanded="true" signature="2022:2198" ph="..." />
-            <marker date="1516877610199" expanded="true" signature="2169:2198" ph="..." />
-            <marker date="1516877610199" expanded="true" signature="2200:2224" ph="SELECT * FRO... categories" />
-            <marker date="1516877610199" expanded="true" signature="2703:2870" ph="..." />
-            <marker date="1516877610199" expanded="true" signature="2899:3028" ph="..." />
-            <marker date="1516877610199" expanded="true" signature="3057:3216" ph="..." />
-            <marker date="1516877610199" expanded="true" signature="3245:3459" ph="..." />
-            <marker date="1516877610199" expanded="true" signature="3382:3448" ph="..." />
-            <marker date="1516877610199" expanded="true" signature="3488:3592" ph="..." />
+            <marker date="1516877920484" expanded="true" signature="80:115" ph="SELECT * FRO... posts" />
+            <marker date="1516877920484" expanded="true" signature="80:116" ph="SELECT * FRO... posts" />
+            <marker date="1516877920484" expanded="true" signature="1062:1097" ph="SELECT * FRO... posts" />
+            <marker date="1516877920484" expanded="true" signature="1062:1098" ph="SELECT * FRO... posts" />
+            <marker date="1516877920484" expanded="true" signature="1237:1253" ph="UPDATE posts... " />
+            <marker date="1516877920484" expanded="true" signature="1237:1356" ph="UPDATE posts... " />
+            <marker date="1516877920484" expanded="true" signature="1237:1376" ph="UPDATE posts... " />
+            <marker date="1516877920484" expanded="true" signature="1237:1562" ph="UPDATE posts... " />
+            <marker date="1516877920484" expanded="true" signature="1237:1572" ph="UPDATE posts... " />
+            <marker date="1516877920484" expanded="true" signature="1237:1573" ph="UPDATE posts... " />
+            <marker date="1516877920484" expanded="true" signature="1237:1652" ph="UPDATE posts... " />
+            <marker date="1516877920484" expanded="true" signature="1243:1253" ph="INSERT INTO posts... " />
+            <marker date="1516877920484" expanded="true" signature="1749:2342" ph="..." />
+            <marker date="1516877920484" expanded="true" signature="1778:1941" ph="..." />
+            <marker date="1516877920484" expanded="true" signature="1970:2137" ph="..." />
+            <marker date="1516877920484" expanded="true" signature="2166:2342" ph="..." />
+            <marker date="1516877920484" expanded="true" signature="2313:2342" ph="..." />
+            <marker date="1516877920484" expanded="true" signature="2344:2368" ph="SELECT * FRO... categories" />
+            <marker date="1516877920484" expanded="true" signature="2847:3014" ph="..." />
+            <marker date="1516877920484" expanded="true" signature="3043:3177" ph="..." />
+            <marker date="1516877920484" expanded="true" signature="3206:3365" ph="..." />
+            <marker date="1516877920484" expanded="true" signature="3394:3608" ph="..." />
+            <marker date="1516877920484" expanded="true" signature="3531:3597" ph="..." />
+            <marker date="1516877920484" expanded="true" signature="3637:3741" ph="..." />
           </folding>
         </state>
       </provider>

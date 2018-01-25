@@ -10,7 +10,7 @@ if (isset($_GET['id'])) {
 	$post_author = $row['post_author'];
 	$post_category_id = $row['post_category_id'];
 	$post_status = $row['post_status'];
-	$image = $row['post_image'];
+	$post_image = $row['post_image'];
 	$post_tags = $row['post_tags'];
 	$post_content = $row['post_content'];
 	$post_date = date('d-m-y');
@@ -31,7 +31,10 @@ if (isset($_POST['update_post'])) {
 
 	move_uploaded_file($post_image_temp, "../images/$post_image");
 	if (empty($post_image)) {
-		$post_image = $image;
+		$get_image = 'SELECT * FROM posts WHERE post_id = ' . $post_id;
+		$image = $db->query($get_image);
+		$row = $image->fetch();
+		$post_image = $row['post_image'];
 	}
 
 	$update_posts_query = "UPDATE posts SET 
@@ -84,7 +87,7 @@ WHERE post_id = {$post_id}";
         <input type="text" class="form-control" name="post_status" value="<?php echo $post_status ?>">
     </div>
     <div class="form-group">
-        <img src="../images/<?php echo $image; ?> " alt="image" width="100">
+        <img src="../images/<?php echo $post_image; ?> " alt="image" width="100">
         <input type="file" name="image">
     </div>
     <div class="form-group">
