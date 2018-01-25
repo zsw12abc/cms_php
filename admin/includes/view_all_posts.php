@@ -1,3 +1,13 @@
+<!--DELETE POST-->
+<?php
+if (isset($_GET['delete'])) {
+	$delete_id = $_GET['delete'];
+	$delete_query = 'DELETE FROM posts WHERE post_id = ' . $delete_id;
+	$delete_post = $db->query($delete_query);
+	header('Location: posts.php');
+}
+?>
+
 <table class="table table-bordered table-hover">
     <thead>
     <tr>
@@ -48,6 +58,7 @@
             <td><?php echo $post_tags ?></td>
             <td><?php echo $post_comment_count ?></td>
             <td><?php echo $post_date ?></td>
+            <td><a href='posts.php?delete=<?php echo $post_id ?>'>Delete</td>
         </tr>
 	<?php
 	endwhile;
