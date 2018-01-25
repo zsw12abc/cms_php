@@ -960,7 +960,7 @@
       <DataType>text|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="239" parent="228" name="post_tages">
+    <column id="239" parent="228" name="post_tags">
       <Position>8</Position>
       <DataType>varchar(255)|0</DataType>
       <ColumnKind>normal</ColumnKind>

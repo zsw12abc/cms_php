@@ -31,17 +31,7 @@
                         </tr>
                         </thead>
                         <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Bootstrap</td>
-                            <td>Shaowei</td>
-                            <td>Bootstrap</td>
-                            <td>Published</td>
-                            <td>Image</td>
-                            <td>CSS</td>
-                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, ipsa!</td>
-                            <td>2018-01-25</td>
-                        </tr>
+						<?php display_posts() ?>
                         </tbody>
                     </table>
 
