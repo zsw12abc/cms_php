@@ -6,9 +6,11 @@
  * Time: 下午2:24
  */
 
-function confirmQuery($query){
+function confirmQuery($query)
+{
+	global $db;
 	if (!$query) {
-		die('Query Failed');
+		die('Query Failed' . $db->errorInfo());
 	}
 }
 
