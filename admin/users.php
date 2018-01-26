@@ -10,7 +10,7 @@
                 <div class="col-lg-12">
                     <h1 class="page-header">
                         Welcome To Dashboard
-                        <small>Author</small>
+                        <small>User</small>
                     </h1>
 					<?php
 					if (isset($_GET['source'])) {

@@ -14,7 +14,7 @@
                 <div class="col-lg-12">
                     <h1 class="page-header">
                         Welcome To Dashboard
-                        <small>Author</small>
+                        <small>Categories</small>
                     </h1>
                     <div class="col-xs-6">
 						<?php insert_categories() ?>
