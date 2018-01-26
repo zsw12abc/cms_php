@@ -10,6 +10,12 @@ if (isset($_POST['comment_submit'])) {
 	$add_comment_query = "INSERT INTO comments(comment_post_id, comment_author, comment_email, comment_content, comment_date)"
 		. "VALUES('{$comment_post_id}', '{$comment_author}', '{$comment_email}', '{$comment_content}', now())";
 	$add_comment = $db->query($add_comment_query);
+
+	$post_query = 'SELECT * FROM posts WHERE post_id = ' . $comment_post_id;
+	$post = $db->query($post_query)->fetch();
+	$post_comment_count = $post['post_comment_count'] + 1;
+	$update_post_query = "UPDATE posts SET post_comment_count = '{$post_comment_count}' WHERE post_id = {$post_id}";
+	$update_post = $db->query($update_post_query);
 }
 ?>
 

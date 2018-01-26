@@ -1014,6 +1014,7 @@
     <column id="249" parent="229" name="post_comment_count">
       <Position>9</Position>
       <DataType>int(11)|0</DataType>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="250" parent="229" name="post_status">
