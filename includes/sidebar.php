@@ -28,7 +28,8 @@
 					<?php
 					while ($row = $select_categories->fetch()) {
 						$cat_title = $row['cat_title'];
-						echo "<li><a href='#'>{$cat_title}</a></li>";
+						$cat_id = $row['cat_id'];
+						echo "<li><a href='category.php?category=$cat_id'>{$cat_title}</a></li>";
 					}
 					?>
                 </ul>
