@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e6f46337-3123-4e56-aa4e-e649d069ca87" name="Default" comment="category posts display">
+    <list default="true" id="e6f46337-3123-4e56-aa4e-e649d069ca87" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/335723ce-600c-4833-90e6-af5894b3c09b.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/335723ce-600c-4833-90e6-af5894b3c09b.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/category.php" afterPath="$PROJECT_DIR$/category.php" />
-      <change beforePath="$PROJECT_DIR$/includes/navigation.php" afterPath="$PROJECT_DIR$/includes/navigation.php" />
-      <change beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -51,6 +49,13 @@
         <item name="@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="cms: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="comments: table" type="98d5ac3d:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="cms: schema" type="c314c289:MysqlImplModel$Schema" />
         <item name="posts: table" type="98d5ac3d:MysqlImplModel$Table" />
       </path>
     </expand>
@@ -64,35 +69,6 @@
             <state relative-caret-position="378">
               <caret line="32" column="44" lean-forward="true" selection-start-line="32" selection-start-column="44" selection-end-line="32" selection-end-column="44" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="add_post.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/includes/add_post.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="26" column="10" lean-forward="true" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
-              <folding>
-                <marker date="1516922623557" expanded="true" signature="515:656" ph="INSERT INTO posts... " />
-                <marker date="1516922623557" expanded="true" signature="515:661" ph="INSERT INTO posts... " />
-                <marker date="1516922623557" expanded="true" signature="515:694" ph="INSERT INTO posts... " />
-                <marker date="1516922623557" expanded="true" signature="515:711" ph="INSERT INTO posts... " />
-                <marker date="1516922623557" expanded="true" signature="515:728" ph="INSERT INTO posts... " />
-                <marker date="1516922623557" expanded="true" signature="515:736" ph="INSERT INTO posts... " />
-                <marker date="1516922623557" expanded="true" signature="515:753" ph="INSERT INTO posts... " />
-                <marker date="1516922623557" expanded="true" signature="515:772" ph="INSERT INTO posts... " />
-                <marker date="1516922623557" expanded="true" signature="515:788" ph="INSERT INTO posts... " />
-                <marker date="1516922623557" expanded="true" signature="515:813" ph="INSERT INTO posts... " />
-                <marker date="1516922623557" expanded="true" signature="515:829" ph="INSERT INTO posts... " />
-                <marker date="1516922623557" expanded="true" signature="515:830" ph="INSERT INTO posts... " />
-                <marker date="1516922623557" expanded="true" signature="1498:1522" ph="SELECT * FRO... categories" />
-                <marker date="1516922623557" expanded="true" signature="1905:2037" ph="..." />
-                <marker date="1516922623557" expanded="true" signature="2066:2169" ph="..." />
-                <marker date="1516922623557" expanded="true" signature="2198:2324" ph="..." />
-                <marker date="1516922623557" expanded="true" signature="2353:2522" ph="..." />
-                <marker date="1516922623557" expanded="true" signature="2551:2656" ph="..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -137,8 +113,8 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="54" lean-forward="false" selection-start-line="28" selection-start-column="54" selection-end-line="28" selection-end-column="54" />
+            <state relative-caret-position="330">
+              <caret line="22" column="29" lean-forward="true" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
               <folding>
                 <marker date="1516926489419" expanded="true" signature="526:545" ph="SELECT * FRO... posts" />
               </folding>
@@ -377,7 +353,7 @@
       <updated>1516760338626</updated>
       <workItem from="1516760339790" duration="6400000" />
       <workItem from="1516770237738" duration="32266000" />
-      <workItem from="1516919767030" duration="3590000" />
+      <workItem from="1516919767030" duration="4076000" />
     </task>
     <task id="LOCAL-00001" summary="add image folder&#10;change html to php">
       <created>1516760746458</created>
@@ -596,11 +572,18 @@
       <option name="project" value="LOCAL" />
       <updated>1516926059768</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="add links and change the length of content display">
+      <created>1516926514702</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1516926514702</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42256000" />
+    <option name="totallyTimeSpent" value="42742000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -659,7 +642,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="insert data into the post table and display" />
     <MESSAGE value="insert post image and display it" />
     <MESSAGE value="search method done(by adding search.php)&#10;add categories to sidebar" />
     <MESSAGE value="createing resuable code in admin" />
@@ -684,7 +666,8 @@
     <MESSAGE value="change categories to add post" />
     <MESSAGE value="single post page" />
     <MESSAGE value="category posts display" />
-    <option name="LAST_COMMIT_MESSAGE" value="category posts display" />
+    <MESSAGE value="add links and change the length of content display" />
+    <option name="LAST_COMMIT_MESSAGE" value="add links and change the length of content display" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1002,10 +985,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="das://table:/c303b512/335723ce-600c-4833-90e6-af5894b3c09b/cms.comments">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="54" lean-forward="false" selection-start-line="28" selection-start-column="54" selection-end-line="28" selection-end-column="54" />
+        <state relative-caret-position="330">
+          <caret line="22" column="29" lean-forward="true" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
           <folding>
             <marker date="1516926489419" expanded="true" signature="526:545" ph="SELECT * FRO... posts" />
           </folding>
