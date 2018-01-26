@@ -17,16 +17,35 @@
 
     <!-- LogIn Well -->
     <div class="well">
-        <h4>LogIn</h4>
-        <form action="includes/login.php" method="post">
-            <div class="form-group">
-                <input name="username" type="text" class="form-control" placeholder="Username">
+		<?php if (isset($_SESSION['username'])): ?>
+            <h4>User Info</h4>
+            <div class="row text-center">
+                <div class="col-md-6">
+                    <img src="images/users/<?php echo $_SESSION['user_image']; ?>" alt="avatar" width="100"
+                         height="100">
+                </div>
+                <div class="col-md-6 text-left">
+                    <h4><b><?php echo $_SESSION['username']; ?></b></h4>
+                    <p class="text-muted"><?php echo $_SESSION['user_email']; ?></p>
+                </div>
             </div>
-            <div class="form-group">
-                <input name="password" type="password" class="form-control" placeholder="Password">
+            <br>
+            <div class="row">
+                <a href="includes/logout.php" class="btn btn-primary btn-block">Log Out</a>
             </div>
-            <input type="submit" class="btn btn-primary btn-block" value="Log In" name="login">
-        </form>
+		<?php else: ?>
+            <h4>LogIn</h4>
+            <form action="includes/login.php" method="post">
+                <div class="form-group">
+                    <input name="username" type="text" class="form-control" placeholder="Username">
+                </div>
+                <div class="form-group">
+                    <input name="password" type="password" class="form-control" placeholder="Password">
+                </div>
+                <input type="submit" class="btn btn-primary btn-block" value="Log In" name="login">
+            </form>
+
+		<?php endif; ?>
     </div>
 
     <!-- Blog Categories Well -->

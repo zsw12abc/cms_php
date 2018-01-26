@@ -22,7 +22,8 @@ if (isset($_POST['login'])) {
 		$_SESSION['username'] = $user_name;
 		$_SESSION['firstname'] = $user_firstname;
 		$_SESSION['lastname'] = $user_lastname;
-		$_SESSION['email'] = $user_email;
+		$_SESSION['user_email'] = $user_email;
+		$_SESSION['user_image'] = $user_image;
 		$_SESSION['user_role'] = $user_role;
 		header('Location: ../admin');
 	} else {
