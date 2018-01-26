@@ -53,7 +53,7 @@ if (isset($_GET['delete'])) {
             <td><?php echo $user_firstname ?></td>
             <td><?php echo $user_lastname ?></td>
             <td><?php echo $user_email ?></td>
-            <td><img width="50" height="50" src="../images/<?php echo $user_image ?>" alt="image"></td>
+            <td><img width="50" height="50" src="../images/users/<?php echo $user_image ?>" alt="image"></td>
             <td><?php echo $user_role ?></td>
             <td><?php echo $user_date ?></td>
             <td><a href='users.php?delete=<?php echo $user_id ?>'>Delete</td>
