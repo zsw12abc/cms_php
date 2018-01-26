@@ -1,3 +1,41 @@
+<!-- Blog Comments -->
+<?php
+if (isset($_POST['comment_submit'])) {
+	$comment_post_id = $post_id;
+	$comment_author = $_POST['comment_author'];
+	$comment_email = $_POST['comment_email'];
+	$comment_content = $_POST['comment_content'];
+//	$comment_status = $_POST['comment_status'];
+	$comment_date = date('d-m-y');
+	$add_comment_query = "INSERT INTO comments(comment_post_id, comment_author, comment_email, comment_content, comment_date)"
+		. "VALUES('{$comment_post_id}', '{$comment_author}', '{$comment_email}', '{$comment_content}', now())";
+	$add_comment = $db->query($add_comment_query);
+}
+?>
+
+<!-- Comments Form -->
+<div class="well">
+    <h4>Leave a Comment:</h4>
+    <form method="post" action="">
+        <div class="form-row">
+            <div class="form-group">
+                <label for="username">Username: </label>
+                <input type="text" name="comment_author" id="username" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="email">Email: </label>
+                <input type="email" name="comment_email" id="email" class="form-control">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="comment">Comment: </label>
+            <textarea class="form-control" name="comment_content" rows="3" id="comment"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" name="comment_submit">Submit</button>
+    </form>
+</div>
+
+<hr>
 <!-- Posted Comments -->
 <?php
 $get_comments_query = 'SELECT * FROM comments WHERE comment_post_id = ' . $post_id;

@@ -956,6 +956,7 @@
     <column id="238" parent="228" name="comment_status">
       <Position>6</Position>
       <DataType>varchar(255)|0</DataType>
+      <DefaultExpression>&apos;approved&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="239" parent="228" name="comment_date">
