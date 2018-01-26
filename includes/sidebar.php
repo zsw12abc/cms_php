@@ -1,19 +1,4 @@
 <div class="col-md-4">
-    <!-- LogIn Well -->
-    <div class="well">
-        <h4>LogIn</h4>
-        <form action="includes/login.php" method="post">
-            <div class="form-group">
-                <input name="username" type="text" class="form-control" placeholder="Username">
-            </div>
-            <div class="form-group">
-                <input name="password" type="password" class="form-control" placeholder="Password">
-            </div>
-            <input type="submit" class="btn btn-primary btn-block" value="Log In" name="login">
-        </form>
-        <!-- /.input-group -->
-    </div>
-
     <!-- Blog Search Well -->
     <div class="well">
         <h4>Blog Search</h4>
@@ -29,6 +14,9 @@
         </form>
         <!-- /.input-group -->
     </div>
+
+    <!-- LogIn Well -->
+	<?php include 'includes/login.php'; ?>
 
     <!-- Blog Categories Well -->
     <div class="well">
