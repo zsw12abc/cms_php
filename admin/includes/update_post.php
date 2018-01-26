@@ -27,7 +27,7 @@ if (isset($_POST['update_post'])) {
 	$post_image_temp = $_FILES['image']['tmp_name'];
 	$post_content = $_POST['post_content'];
 	$post_date = date('d-m-y');
-	$post_comment_count = 0;
+//	$post_comment_count = 0;
 
 	move_uploaded_file($post_image_temp, "../images/$post_image");
 	if (empty($post_image)) {
@@ -44,7 +44,8 @@ post_author='{$post_author}',
 post_date = now(), 
 post_image='{$post_image}', 
 post_content='{$post_content}', 
-post_tags = '{$post_tags}', post_comment_count = '{$post_comment_count}', post_status = '{$post_status}' 
+post_tags = '{$post_tags}', 
+post_status = '{$post_status}' 
 WHERE post_id = {$post_id}";
 //	echo $update_posts_query;
 	$update_posts = $db->query($update_posts_query);

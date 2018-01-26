@@ -18,7 +18,7 @@
             <!--            </h1>-->
 
 			<?php
-			$query = 'SELECT * FROM posts';
+			$query = "SELECT * FROM posts WHERE post_status = 'published'";
 			$select_posts = $db->query($query);
 			while ($row = $select_posts->fetch()) :
 				$post_id = $row['post_id'];

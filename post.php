@@ -1,9 +1,9 @@
-<?php include "includes/database.php"; ?>
-<?php include "includes/header.php"; ?>
+<?php include 'includes/database.php'; ?>
+<?php include 'includes/header.php'; ?>
 
 
     <!--NAVIGATION-->
-<?php include "includes/navigation.php"; ?>
+<?php include 'includes/navigation.php'; ?>
 
     <!-- Page Content -->
     <div class="container">
@@ -51,7 +51,7 @@
         </div>
 
         <!-- Blog Sidebar Widgets Column -->
-		<?php include "includes/sidebar.php"; ?>
+		<?php include 'includes/sidebar.php'; ?>
 
 
     </div>
@@ -59,4 +59,4 @@
 
     <hr>
 
-<?php include "includes/footer.php"; ?>
+<?php include 'includes/footer.php'; ?>
