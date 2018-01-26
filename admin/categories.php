@@ -40,6 +40,7 @@
                                 <th>ID</th>
                                 <th>Category Title</th>
                                 <th>Delete</th>
+                                <th>Edit</th>
                             </tr>
                             </thead>
                             <tbody>
