@@ -19,11 +19,11 @@
 						$source = '';
 					}
 					switch ($source) {
-						case 'edit_comment':
-							include 'includes/update_comment.php';
+						case 'edit_user':
+							include 'includes/update_user.php';
 							break;
 						default:
-							include 'includes/view_all_comments.php';
+							include 'includes/view_all_users.php';
 					}
 					?>
 				</div>
