@@ -76,7 +76,24 @@ WHERE comment_id = {$comment_id}";
     </div>
     <div class="form-group">
         <label for="comment_status">Comment Status</label>
-        <input type="text" class="form-control" name="comment_status" value="<?php echo $comment_status ?>">
+        <select class="form-control" name="comment_status" id="comment_status">
+            <option value="approved"
+				<?php
+				if ($comment_status == 'approved') {
+					echo 'selected';
+				}
+				?>
+            >Approved
+            </option>
+            <option value="disapproved"
+				<?php
+				if ($comment_status == 'disapproved') {
+					echo 'selected';
+				}
+				?>
+            >Disapproved
+            </option>
+        </select>
     </div>
     <div class="form-group">
         <input type="submit" name="update_comment" value="Update Comment" class="btn btn-primary">
