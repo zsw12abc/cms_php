@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e6f46337-3123-4e56-aa4e-e649d069ca87" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/335723ce-600c-4833-90e6-af5894b3c09b.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/335723ce-600c-4833-90e6-af5894b3c09b.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/admin/includes/view_all_comments.php" afterPath="$PROJECT_DIR$/admin/includes/view_all_comments.php" />
       <change beforePath="$PROJECT_DIR$/includes/comment.php" afterPath="$PROJECT_DIR$/includes/comment.php" />
-      <change beforePath="$PROJECT_DIR$/post.php" afterPath="$PROJECT_DIR$/post.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -75,23 +74,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="view_all_comments.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/includes/view_all_comments.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="35" column="8" lean-forward="true" selection-start-line="35" selection-start-column="8" selection-end-line="45" selection-end-column="49" />
-              <folding>
-                <element signature="e#484#572#0#PHP" expanded="true" />
-                <marker date="1516928111871" expanded="true" signature="107:147" ph="DELETE FROM comments... " />
-                <marker date="1516928111871" expanded="true" signature="594:616" ph="SELECT * FRO... comments" />
-                <marker date="1516928111871" expanded="true" signature="1058:1093" ph="SELECT * FRO... posts" />
-                <marker date="1516928111871" expanded="true" signature="1058:1094" ph="SELECT * FRO... posts" />
-                <marker date="1516928111871" expanded="true" signature="1250:1558" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="comments" pinned="false" current-in-tab="true">
         <entry file="das://table:/c303b512/335723ce-600c-4833-90e6-af5894b3c09b/cms.comments">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
@@ -138,7 +120,7 @@
       <file leaf-file-name="update_post.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/includes/update_post.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
+            <state relative-caret-position="-146">
               <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
               <folding>
                 <marker date="1516877920484" expanded="true" signature="80:115" ph="SELECT * FRO... posts" />
@@ -159,30 +141,48 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="functions.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/functions.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="840">
-              <caret line="61" column="40" lean-forward="false" selection-start-line="61" selection-start-column="26" selection-end-line="61" selection-end-column="40" />
-              <folding>
-                <marker date="1516862430393" expanded="true" signature="500:558" ph="INSERT INTO categories... " />
-                <marker date="1516862430393" expanded="true" signature="752:776" ph="SELECT * FRO... categories" />
-                <marker date="1516862430393" expanded="true" signature="1376:1414" ph="DELETE FROM categories... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="update_comment.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/includes/update_comment.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="34" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="25" selection-end-column="34" />
+            <state relative-caret-position="405">
+              <caret line="27" column="29" lean-forward="true" selection-start-line="27" selection-start-column="29" selection-end-line="34" selection-end-column="34" />
               <folding>
                 <marker date="1516928732080" expanded="true" signature="86:128" ph="SELECT * FRO... comments" />
                 <marker date="1516928732080" expanded="true" signature="538:574" ph="SELECT * FRO... posts" />
                 <marker date="1516928732080" expanded="true" signature="1046:1299" ph="UPDATE comments... " />
                 <marker date="1516928732080" expanded="true" signature="1705:1724" ph="SELECT * FRO... posts" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="view_all_posts.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/includes/view_all_posts.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="246">
+              <caret line="37" column="8" lean-forward="false" selection-start-line="37" selection-start-column="8" selection-end-line="49" selection-end-column="44" />
+              <folding>
+                <marker date="1516927929473" expanded="true" signature="104:138" ph="DELETE FROM posts... " />
+                <marker date="1516927929473" expanded="true" signature="689:708" ph="SELECT * FRO... posts" />
+                <marker date="1516927929473" expanded="true" signature="1193:1233" ph="SELECT * FRO... categories" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="view_all_comments.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/includes/view_all_comments.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="282">
+              <caret line="39" column="16" lean-forward="false" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
+              <folding>
+                <marker date="1516932166447" expanded="true" signature="107:147" ph="DELETE FROM comments... " />
+                <marker date="1516932166447" expanded="true" signature="321:390" ph="UPDATE comments... " />
+                <marker date="1516932166447" expanded="true" signature="564:636" ph="UPDATE comments... " />
+                <marker date="1516932166447" expanded="true" signature="1215:1237" ph="SELECT * FRO... comments" />
+                <marker date="1516932166447" expanded="true" signature="1694:1729" ph="SELECT * FRO... posts" />
+                <marker date="1516932166447" expanded="true" signature="1694:1730" ph="SELECT * FRO... posts" />
+                <marker date="1516932166447" expanded="true" signature="1892:2272" ph="..." />
               </folding>
             </state>
           </provider>
@@ -204,12 +204,20 @@
       <file leaf-file-name="comment.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/includes/comment.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+            <state relative-caret-position="577">
+              <caret line="40" column="83" lean-forward="false" selection-start-line="40" selection-start-column="83" selection-end-line="40" selection-end-column="83" />
               <folding>
-                <marker date="1516930749541" expanded="true" signature="335:539" ph="INSERT INTO comments... " />
-                <marker date="1516930749541" expanded="true" signature="1522:1568" ph="SELECT * FRO... comments" />
-                <marker date="1516930749541" expanded="true" signature="1522:1569" ph="SELECT * FRO... comments" />
+                <marker date="1516932245951" expanded="true" signature="335:539" ph="INSERT INTO comments... " />
+                <marker date="1516932245951" expanded="true" signature="1522:1568" ph="SELECT * FRO... comments" />
+                <marker date="1516932245951" expanded="true" signature="1522:1569" ph="SELECT * FRO... comments" />
+                <marker date="1516932245951" expanded="true" signature="1522:1589" ph="SELECT * FRO... comments" />
+                <marker date="1516932245951" expanded="true" signature="1522:1606" ph="SELECT * FRO... comments" />
+                <marker date="1516932245951" expanded="true" signature="1522:1617" ph="SELECT * FRO... comments" />
+                <marker date="1516932245951" expanded="true" signature="1522:1618" ph="SELECT * FRO... comments" />
+                <marker date="1516932245951" expanded="true" signature="1945:2392" ph="..." />
+                <marker date="1516932245951" expanded="true" signature="1984:2075" ph="..." />
+                <marker date="1516932245951" expanded="true" signature="2108:2381" ph="..." />
+                <marker date="1516932245951" expanded="true" signature="2147:2332" ph="..." />
               </folding>
             </state>
           </provider>
@@ -266,11 +274,11 @@
         <option value="$PROJECT_DIR$/admin/posts.php" />
         <option value="$PROJECT_DIR$/admin/includes/admin_navigation.php" />
         <option value="$PROJECT_DIR$/admin/includes/view_all_posts.php" />
-        <option value="$PROJECT_DIR$/admin/includes/view_all_comments.php" />
         <option value="$PROJECT_DIR$/admin/comments.php" />
         <option value="$PROJECT_DIR$/admin/includes/update_comment.php" />
         <option value="$PROJECT_DIR$/includes/footer.php" />
         <option value="$PROJECT_DIR$/post.php" />
+        <option value="$PROJECT_DIR$/admin/includes/view_all_comments.php" />
         <option value="$PROJECT_DIR$/includes/comment.php" />
       </list>
     </option>
@@ -398,7 +406,7 @@
       <updated>1516760338626</updated>
       <workItem from="1516760339790" duration="6400000" />
       <workItem from="1516770237738" duration="32266000" />
-      <workItem from="1516919767030" duration="7808000" />
+      <workItem from="1516919767030" duration="8741000" />
     </task>
     <task id="LOCAL-00001" summary="add image folder&#10;change html to php">
       <created>1516760746458</created>
@@ -652,11 +660,18 @@
       <option name="project" value="LOCAL" />
       <updated>1516929402941</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="front page add comments finished">
+      <created>1516930908793</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1516930908793</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46474000" />
+    <option name="totallyTimeSpent" value="47407000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -715,7 +730,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="create admin category" />
     <MESSAGE value="display category" />
     <MESSAGE value="Add Categories" />
     <MESSAGE value="delete the category" />
@@ -740,7 +754,8 @@
     <MESSAGE value="view all comments" />
     <MESSAGE value="update comments added" />
     <MESSAGE value="change footer&#10;add comment display on front page" />
-    <option name="LAST_COMMIT_MESSAGE" value="change footer&#10;add comment display on front page" />
+    <MESSAGE value="front page add comments finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="front page add comments finished" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -970,38 +985,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/includes/view_all_posts.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="37" column="8" lean-forward="false" selection-start-line="37" selection-start-column="8" selection-end-line="49" selection-end-column="44" />
-          <folding>
-            <marker date="1516927929473" expanded="true" signature="104:138" ph="DELETE FROM posts... " />
-            <marker date="1516927929473" expanded="true" signature="689:708" ph="SELECT * FRO... posts" />
-            <marker date="1516927929473" expanded="true" signature="1193:1233" ph="SELECT * FRO... categories" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/posts.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" column="26" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/includes/view_all_comments.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="35" column="8" lean-forward="true" selection-start-line="35" selection-start-column="8" selection-end-line="45" selection-end-column="49" />
-          <folding>
-            <element signature="e#484#572#0#PHP" expanded="true" />
-            <marker date="1516928111871" expanded="true" signature="107:147" ph="DELETE FROM comments... " />
-            <marker date="1516928111871" expanded="true" signature="594:616" ph="SELECT * FRO... comments" />
-            <marker date="1516928111871" expanded="true" signature="1058:1093" ph="SELECT * FRO... posts" />
-            <marker date="1516928111871" expanded="true" signature="1058:1094" ph="SELECT * FRO... posts" />
-            <marker date="1516928111871" expanded="true" signature="1250:1558" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1013,28 +1001,6 @@
             <marker date="1516862430393" expanded="true" signature="500:558" ph="INSERT INTO categories... " />
             <marker date="1516862430393" expanded="true" signature="752:776" ph="SELECT * FRO... categories" />
             <marker date="1516862430393" expanded="true" signature="1376:1414" ph="DELETE FROM categories... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/includes/update_post.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
-          <folding>
-            <marker date="1516877920484" expanded="true" signature="80:115" ph="SELECT * FRO... posts" />
-            <marker date="1516877920484" expanded="true" signature="80:116" ph="SELECT * FRO... posts" />
-            <marker date="1516877920484" expanded="true" signature="1062:1097" ph="SELECT * FRO... posts" />
-            <marker date="1516877920484" expanded="true" signature="1062:1098" ph="SELECT * FRO... posts" />
-            <marker date="1516877920484" expanded="true" signature="1237:1253" ph="UPDATE posts... " />
-            <marker date="1516877920484" expanded="true" signature="1237:1356" ph="UPDATE posts... " />
-            <marker date="1516877920484" expanded="true" signature="1237:1376" ph="UPDATE posts... " />
-            <marker date="1516877920484" expanded="true" signature="1237:1562" ph="UPDATE posts... " />
-            <marker date="1516877920484" expanded="true" signature="1237:1572" ph="UPDATE posts... " />
-            <marker date="1516877920484" expanded="true" signature="1237:1573" ph="UPDATE posts... " />
-            <marker date="1516877920484" expanded="true" signature="1237:1652" ph="UPDATE posts... " />
-            <marker date="1516877920484" expanded="true" signature="1243:1253" ph="INSERT INTO posts... " />
-            <marker date="1516877920484" expanded="true" signature="2344:2368" ph="SELECT * FRO... categories" />
           </folding>
         </state>
       </provider>
@@ -1054,19 +1020,6 @@
           <folding>
             <marker date="1516929456990" expanded="true" signature="376:411" ph="SELECT * FRO... posts" />
             <marker date="1516929456990" expanded="true" signature="376:412" ph="SELECT * FRO... posts" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/includes/update_comment.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="34" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="25" selection-end-column="34" />
-          <folding>
-            <marker date="1516928732080" expanded="true" signature="86:128" ph="SELECT * FRO... comments" />
-            <marker date="1516928732080" expanded="true" signature="538:574" ph="SELECT * FRO... posts" />
-            <marker date="1516928732080" expanded="true" signature="1046:1299" ph="UPDATE comments... " />
-            <marker date="1516928732080" expanded="true" signature="1705:1724" ph="SELECT * FRO... posts" />
           </folding>
         </state>
       </provider>
@@ -1101,14 +1054,85 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/admin/includes/view_all_posts.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="37" column="8" lean-forward="false" selection-start-line="37" selection-start-column="8" selection-end-line="49" selection-end-column="44" />
+          <folding>
+            <marker date="1516927929473" expanded="true" signature="104:138" ph="DELETE FROM posts... " />
+            <marker date="1516927929473" expanded="true" signature="689:708" ph="SELECT * FRO... posts" />
+            <marker date="1516927929473" expanded="true" signature="1193:1233" ph="SELECT * FRO... categories" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/includes/update_comment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="29" lean-forward="true" selection-start-line="27" selection-start-column="29" selection-end-line="34" selection-end-column="34" />
+          <folding>
+            <marker date="1516928732080" expanded="true" signature="86:128" ph="SELECT * FRO... comments" />
+            <marker date="1516928732080" expanded="true" signature="538:574" ph="SELECT * FRO... posts" />
+            <marker date="1516928732080" expanded="true" signature="1046:1299" ph="UPDATE comments... " />
+            <marker date="1516928732080" expanded="true" signature="1705:1724" ph="SELECT * FRO... posts" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/includes/update_post.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-146">
+          <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+          <folding>
+            <marker date="1516877920484" expanded="true" signature="80:115" ph="SELECT * FRO... posts" />
+            <marker date="1516877920484" expanded="true" signature="80:116" ph="SELECT * FRO... posts" />
+            <marker date="1516877920484" expanded="true" signature="1062:1097" ph="SELECT * FRO... posts" />
+            <marker date="1516877920484" expanded="true" signature="1062:1098" ph="SELECT * FRO... posts" />
+            <marker date="1516877920484" expanded="true" signature="1237:1253" ph="UPDATE posts... " />
+            <marker date="1516877920484" expanded="true" signature="1237:1356" ph="UPDATE posts... " />
+            <marker date="1516877920484" expanded="true" signature="1237:1376" ph="UPDATE posts... " />
+            <marker date="1516877920484" expanded="true" signature="1237:1562" ph="UPDATE posts... " />
+            <marker date="1516877920484" expanded="true" signature="1237:1572" ph="UPDATE posts... " />
+            <marker date="1516877920484" expanded="true" signature="1237:1573" ph="UPDATE posts... " />
+            <marker date="1516877920484" expanded="true" signature="1237:1652" ph="UPDATE posts... " />
+            <marker date="1516877920484" expanded="true" signature="1243:1253" ph="INSERT INTO posts... " />
+            <marker date="1516877920484" expanded="true" signature="2344:2368" ph="SELECT * FRO... categories" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/includes/view_all_comments.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="39" column="16" lean-forward="false" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
+          <folding>
+            <marker date="1516932166447" expanded="true" signature="107:147" ph="DELETE FROM comments... " />
+            <marker date="1516932166447" expanded="true" signature="321:390" ph="UPDATE comments... " />
+            <marker date="1516932166447" expanded="true" signature="564:636" ph="UPDATE comments... " />
+            <marker date="1516932166447" expanded="true" signature="1215:1237" ph="SELECT * FRO... comments" />
+            <marker date="1516932166447" expanded="true" signature="1694:1729" ph="SELECT * FRO... posts" />
+            <marker date="1516932166447" expanded="true" signature="1694:1730" ph="SELECT * FRO... posts" />
+            <marker date="1516932166447" expanded="true" signature="1892:2272" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/includes/comment.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        <state relative-caret-position="577">
+          <caret line="40" column="83" lean-forward="false" selection-start-line="40" selection-start-column="83" selection-end-line="40" selection-end-column="83" />
           <folding>
-            <marker date="1516930749541" expanded="true" signature="335:539" ph="INSERT INTO comments... " />
-            <marker date="1516930749541" expanded="true" signature="1522:1568" ph="SELECT * FRO... comments" />
-            <marker date="1516930749541" expanded="true" signature="1522:1569" ph="SELECT * FRO... comments" />
+            <marker date="1516932245951" expanded="true" signature="335:539" ph="INSERT INTO comments... " />
+            <marker date="1516932245951" expanded="true" signature="1522:1568" ph="SELECT * FRO... comments" />
+            <marker date="1516932245951" expanded="true" signature="1522:1569" ph="SELECT * FRO... comments" />
+            <marker date="1516932245951" expanded="true" signature="1522:1589" ph="SELECT * FRO... comments" />
+            <marker date="1516932245951" expanded="true" signature="1522:1606" ph="SELECT * FRO... comments" />
+            <marker date="1516932245951" expanded="true" signature="1522:1617" ph="SELECT * FRO... comments" />
+            <marker date="1516932245951" expanded="true" signature="1522:1618" ph="SELECT * FRO... comments" />
+            <marker date="1516932245951" expanded="true" signature="1945:2392" ph="..." />
+            <marker date="1516932245951" expanded="true" signature="1984:2075" ph="..." />
+            <marker date="1516932245951" expanded="true" signature="2108:2381" ph="..." />
+            <marker date="1516932245951" expanded="true" signature="2147:2332" ph="..." />
           </folding>
         </state>
       </provider>

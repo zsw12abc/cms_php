@@ -38,7 +38,7 @@ if (isset($_POST['comment_submit'])) {
 <hr>
 <!-- Posted Comments -->
 <?php
-$get_comments_query = 'SELECT * FROM comments WHERE comment_post_id = ' . $post_id;
+$get_comments_query = 'SELECT * FROM comments WHERE comment_post_id = ' . $post_id . " AND comment_status = 'approved'";
 $comment = $db->query($get_comments_query);
 ?>
 
