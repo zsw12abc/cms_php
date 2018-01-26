@@ -66,7 +66,11 @@ WHERE comment_id = {$id}";
 		?>
         <tr>
             <td><?php echo $comment_id ?></td>
-            <td><?php echo $comment_post_title ?></td>
+            <td>
+                <a href='../post.php?id=<?php  echo $comment_post_id;?>'>
+					<?php echo $comment_post_title ?>
+                </a>
+            </td>
             <td><?php echo $comment_author ?></td>
             <td><?php echo $comment_email ?></td>
             <td><?php echo $comment_content ?></td>
