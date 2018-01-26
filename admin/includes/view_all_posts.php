@@ -20,6 +20,7 @@ if (isset($_GET['delete'])) {
         <th>Tags</th>
         <th>Comments</th>
         <th>Date</th>
+        <th>Delete</th>
     </tr>
     </thead>
     <tbody>

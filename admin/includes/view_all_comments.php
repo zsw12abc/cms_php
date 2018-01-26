@@ -18,6 +18,7 @@ if (isset($_GET['delete'])) {
 		<th>Content</th>
 		<th>Status</th>
 		<th>Date</th>
+		<th>Delete</th>
 	</tr>
 	</thead>
 	<tbody>

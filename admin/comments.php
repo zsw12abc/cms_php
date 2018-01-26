@@ -19,11 +19,11 @@
 						$source = '';
 					}
 					switch ($source) {
-						case 'add_post':
+						case 'add_comment':
 							include 'includes/add_post.php';
 							break;
-						case 'edit_post':
-							include 'includes/update_post.php';
+						case 'edit_comment':
+							include 'includes/update_comment.php';
 							break;
 						default:
 							include 'includes/view_all_comments.php';
