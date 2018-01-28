@@ -1,0 +1,130 @@
+<?php include 'includes/admin_header.php'; ?>
+
+<div id="wrapper">
+    <!-- Navigation -->
+	<?php include 'includes/admin_navigation.php' ?>
+    <div id="page-wrapper">
+        <div class="container-fluid">
+            <!-- Page Heading -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">
+                        Welcome To Dashboard
+                        <small>User</small>
+                    </h1>
+					<?php
+					if (isset($_SESSION['username'])) :
+						$user_id = $_SESSION['user_id'];
+						$user_query = 'SELECT * FROM users WHERE user_id = ' . $user_id;
+						$user = $db->query($user_query)->fetch();
+						$user_id = $user['user_id'];
+						$username = $user['username'];
+						$user_password = $user['user_password'];
+						$user_firstname = $user['user_firstname'];
+						$user_lastname = $user['user_lastname'];
+						$user_email = $user['user_email'];
+						$user_image = $user['user_image'];
+						$user_role = $user['user_role'];
+						$user_date = date('M d Y', strtotime($user['user_date']));
+
+
+						if (isset($_POST['update_user'])) {
+							$username = $_POST['username'];
+							$user_password = $_POST['user_password'];
+							$user_firstname = $_POST['user_firstname'];
+							$user_lastname = $_POST['user_lastname'];
+							$user_email = $_POST['user_email'];
+							$user_role = $_POST['user_role'];
+							$user_image = $_FILES['image']['name'];
+							$user_image_temp = $_FILES['image']['tmp_name'];
+							$user_date = date('d-m-y');
+
+							move_uploaded_file($user_image_temp, "../images/users/$user_image");
+							if (empty($user_image)) {
+								$get_image = 'SELECT * FROM users WHERE user_id = ' . $user_id;
+								$image = $db->query($get_image);
+								$row = $image->fetch();
+								$user_image = $row['user_image'];
+							}
+
+							$update_users_query = "UPDATE users SET 
+username = '{$username}', 
+user_password='{$user_password}', 
+user_firstname='{$user_firstname}', 
+user_lastname='{$user_lastname}', 
+user_email='{$user_email}', 
+user_image='{$user_image}', 
+user_role='{$user_role}', 
+user_date = now() 
+WHERE user_id = {$user_id}";
+							$update_users = $db->query($update_users_query);
+							confirmQuery($update_users);
+						}
+						?>
+
+                        <form action="" method="post" enctype="multipart/form-data">
+                            <div class="form-group">
+                                <label for="user_title">Username</label>
+                                <input type="text" class="form-control" name="username" value="<?php echo $username ?>">
+                            </div>
+                            <div class="form-group">
+                                <label for="user_title">Password</label>
+                                <input type="password" class="form-control" name="user_password"
+                                       value="<?php echo $user_password ?>">
+                            </div>
+                            <div class="form-group">
+                                <label for="user_title">First Name</label>
+                                <input type="text" class="form-control" name="user_firstname"
+                                       value="<?php echo $user_firstname ?>">
+                            </div>
+                            <div class="form-group">
+                                <label for="user_title">Last Name</label>
+                                <input type="text" class="form-control" name="user_lastname"
+                                       value="<?php echo $user_lastname ?>">
+                            </div>
+                            <div class="form-group">
+                                <label for="user_author">Email</label>
+                                <input type="email" class="form-control" name="user_email"
+                                       value="<?php echo $user_email ?>">
+                            </div>
+                            <div class="form-group">
+                                <img src="../images/users/<?php echo $user_image; ?> " alt="image" width="100">
+                                <input type="file" name="image">
+                            </div>
+                            <div class="form-group">
+                                <label for="user_role">User Role</label>
+                                <select name="user_role" id="user_role" class="form-control">
+                                    <option value="admin"
+										<?php
+										if ($user_role === 'admin') {
+											echo 'selected';
+										} ?>
+                                    >Admin
+                                    </option>
+                                    <option value="user"
+										<?php
+										if ($user_role === 'user') {
+											echo 'selected';
+										} ?>
+                                    >User
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" name="update_user" value="Update Post" class="btn btn-primary">
+                            </div>
+
+                        </form>
+
+
+					<?php endif; ?>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container-fluid -->
+    </div>
+    <!-- /#page-wrapper -->
+</div>
+<!-- /#wrapper -->
+<?php include 'includes/admin_footer.php' ?>

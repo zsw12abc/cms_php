@@ -11,6 +11,7 @@ if (isset($_POST['login'])) {
 	$users = $db->query($users_query);
 	$user = $users->fetch();
 	$user_password = $db->quote($user['user_password']);
+	$user_id = $user['user_id'];
 	$user_name = $user['username'];
 	$user_image = $user['user_image'];
 	$user_firstname = $user['user_firstname'];
@@ -19,6 +20,7 @@ if (isset($_POST['login'])) {
 	$user_role = $user['user_role'];
 
 	if ($password === "{$user_password}") {
+		$_SESSION['user_id'] = $user_id;
 		$_SESSION['username'] = $user_name;
 		$_SESSION['firstname'] = $user_firstname;
 		$_SESSION['lastname'] = $user_lastname;
