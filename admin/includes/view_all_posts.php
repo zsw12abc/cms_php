@@ -10,7 +10,7 @@ if (isset($_GET['delete'])) {
 
 <form action="" method="post">
     <table class="table table-bordered table-hover">
-        <div id="bulkOptionContainer" class=" col-xs-4 ">
+        <div id="bulkOptionContainer" class="col-xs-4" style="padding-left: 0">
             <select name="posts_filter_status" id="" class="form-control">
                 <option value="">Select Options</option>
                 <option value="published">Published</option>
@@ -41,22 +41,26 @@ if (isset($_GET['delete'])) {
         <tbody>
 		<?php
 		if (isset($_POST['checkBoxArray'])) {
-			foreach ($_POST['checkBoxArray'] as $checkBoxID) {
+			$checkBoxArray = $_POST['checkBoxArray'];
+			foreach ($checkBoxArray as $checkBoxID) {
 				$posts_filter_status = $_POST['posts_filter_status'];
 				switch ($posts_filter_status) {
 					case 'published':
 						$update_query = "UPDATE posts SET post_status = '{$posts_filter_status}' WHERE post_id = " . $checkBoxID;
 						$updated = $db->query($update_query);
+						confirmQuery($updated);
 						header('Location: posts.php');
 						break;
 					case 'draft':
 						$update_query = "UPDATE posts SET post_status = '{$posts_filter_status}' WHERE post_id = " . $checkBoxID;
 						$updated = $db->query($update_query);
+						confirmQuery($updated);
 						header('Location: posts.php');
 						break;
 					case 'delete':
 						$delete_query = 'DELETE FROM posts WHERE post_id = ' . $checkBoxID;
 						$delete_post = $db->query($delete_query);
+						confirmQuery($delete_post);
 						header('Location: posts.php');
 						break;
 				}
