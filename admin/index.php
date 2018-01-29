@@ -31,19 +31,19 @@
 			<?php
 			$posts_query = 'SELECT * FROM posts';
 			$posts = $db->query($posts_query);
-			$postsNumber = $posts->columnCount();
+			$postsNumber = $posts->rowCount();
 
 			$comments_query = 'SELECT * FROM comments';
 			$comments = $db->query($comments_query);
-			$commentsNumber = $comments->columnCount();
+			$commentsNumber = $comments->rowCount();
 
 			$users_query = 'SELECT * FROM users';
 			$users = $db->query($users_query);
-			$usersNumber = $users->columnCount();
+			$usersNumber = $users->rowCount();
 
 			$categories_query = 'SELECT * FROM categories';
 			$categories = $db->query($categories_query);
-			$categoriesNumber = $categories->columnCount();
+			$categoriesNumber = $categories->rowCount();
 			?>
 
             <div class="row">
