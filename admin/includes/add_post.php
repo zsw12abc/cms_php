@@ -17,6 +17,7 @@ if (isset($_POST['create_post'])) {
 		. "VALUES('{$post_category_id}', '{$post_title}', '{$post_author}', now(), '{$post_image}', '{$post_content}', '{$post_tags}', '{$post_comment_count}', '{$post_status}')";
 	$add_posts = $db->query($add_posts_query);
 	confirmQuery($add_posts);
+	echo '<span class="text-muted">Post Published: </span>' . "<a href='posts.php'>View Posts</a>";
 }
 ?>
 

@@ -30,6 +30,7 @@ user_date)" . "VALUES('{$username}',
 now())";
 	$add_users = $db->query($add_users_query);
 	confirmQuery($add_users);
+	echo '<span class="text-muted">User Created: </span>' . "<a href='users.php'>View Users</a>";
 }
 ?>
 
