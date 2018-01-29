@@ -161,7 +161,8 @@
 			<?php
 			$elements = ['Active Posts', 'Comments', 'Users', 'Categories'];
 			$elements_count = [$postsNumber, $commentsNumber, $usersNumber, $categoriesNumber];
-			for ($i = 0; $i < 4; $i++) {
+			$num = count($elements);
+			for ($i = 0; $i < $num; $i++) {
 				echo "['{$elements[$i]}',{$elements_count[$i]}],";
 			}
 			?>
