@@ -96,7 +96,8 @@ if (isset($_GET['delete'])) {
                 <td><?php echo $post_tags ?></td>
                 <td><?php echo $post_comment_count ?></td>
                 <td><?php echo $post_date ?></td>
-                <td><a href='posts.php?delete=<?php echo $post_id ?>'>Delete</td>
+                <td><a onClick="javascript: return confirm('Are you sure to delete this post?')"
+                       href='posts.php?delete=<?php echo $post_id ?>'>Delete</td>
                 <td><a href='posts.php?source=edit_post&id=<?php echo $post_id ?>'>Edit</td>
                 <td><a href='../post.php?id=<?php echo $post_id ?>'>View Post</td>
             </tr>

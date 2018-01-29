@@ -1,11 +1,11 @@
 <!--DELETE users-->
 <?php
-if (isset($_GET['delete'])) {
+if (isset($_GET['delete'])) :
 	$delete_id = $_GET['delete'];
 	$delete_query = 'DELETE FROM users WHERE user_id = ' . $delete_id;
 	$delete_user = $db->query($delete_query);
 	header('Location: users.php');
-}
+endif;
 ?>
 
 <table class="table table-bordered table-hover">
@@ -54,8 +54,10 @@ if (isset($_GET['delete'])) {
             <td><img width="50" height="50" src="../images/users/<?php echo $user_image ?>" alt="image"></td>
             <td><?php echo $user_role ?></td>
             <td><?php echo $user_date ?></td>
-            <td><a href='users.php?delete=<?php echo $user_id ?>'>Delete</td>
-            <td><a href='users.php?source=edit_user&id=<?php echo $user_id ?>'>Edit</td>
+            <td><a onClick="javascript: return confirm('Are you sure to delete this user?')"
+                   href='users.php?delete=<?php echo $user_id ?>'>Delete</td>
+            <td><a href='users.php?source=edit_user&id=<?php echo $user_id ?>'>Edit
+            </td>
         </tr>
 	<?php
 	endwhile;

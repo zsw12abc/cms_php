@@ -67,7 +67,7 @@ WHERE comment_id = {$id}";
         <tr>
             <td><?php echo $comment_id ?></td>
             <td>
-                <a href='../post.php?id=<?php  echo $comment_post_id;?>'>
+                <a href='../post.php?id=<?php echo $comment_post_id; ?>'>
 					<?php echo $comment_post_title ?>
                 </a>
             </td>
@@ -78,7 +78,8 @@ WHERE comment_id = {$id}";
             <td><?php echo $comment_date ?></td>
             <td><a href='comments.php?approve=<?php echo $comment_id ?>'>Approve</td>
             <td><a href='comments.php?disapprove=<?php echo $comment_id ?>'>Disapprove</td>
-            <td><a href='comments.php?delete=<?php echo $comment_id ?>'>Delete</td>
+            <td><a onClick="javascript: return confirm('Are you sure to delete this Comment?')"
+                   href='comments.php?delete=<?php echo $comment_id ?>'>Delete</td>
             <td><a href='comments.php?source=edit_comment&id=<?php echo $comment_id ?>'>Edit</td>
         </tr>
 	<?php
