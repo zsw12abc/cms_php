@@ -17,7 +17,7 @@ if (isset($_POST['create_post'])) {
 		. "VALUES('{$post_category_id}', '{$post_title}', '{$post_author}', now(), '{$post_image}', '{$post_content}', '{$post_tags}', '{$post_comment_count}', '{$post_status}')";
 	$add_posts = $db->query($add_posts_query);
 	confirmQuery($add_posts);
-	echo '<span class="text-muted">Post Published: </span>' . "<a href='posts.php'>View Posts</a>";
+	echo '<p class="bg-success"><span class="text-muted">Post Published: </span>' . "<a href='posts.php'>View Posts</a></p>";
 }
 ?>
 
@@ -49,7 +49,10 @@ if (isset($_POST['create_post'])) {
     </div>
     <div class="form-group">
         <label for="post_status">Post Status</label>
-        <input type="text" class="form-control" name="post_status">
+        <select class="form-control" id="post_status" name="post_status">
+            <option value="draft">Draft</option>
+            <option value="published">Published</option>
+        </select>
     </div>
     <div class="form-group">
         <label for="post_image">Post Image</label>
