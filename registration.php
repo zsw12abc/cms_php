@@ -20,8 +20,9 @@ if (isset($_POST['submit'])) {
 		$row = $select_randsalt_query->fetch();
 		$salt = $row['randSalt'];
 
-		$query = "INSERT INTO users (username, user_email, user_password,user_date, user_role) VALUES ({$username},{$email},{$password}, now(), 'user')";
-//		echo $query;
+		$password = crypt($password, $salt);
+
+		$query = "INSERT INTO users (username, user_email, user_password,user_date, user_role) VALUES ({$username},{$email},'{$password}', now(), 'user')";
 		$register_user_query = $db->query($query);
 		$message = 'Your Registration has been submitted';
 	} else {

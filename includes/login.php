@@ -19,7 +19,15 @@ if (isset($_POST['login'])) {
 	$user_email = $user['user_email'];
 	$user_role = $user['user_role'];
 
-	if ($password === "{$user_password}") {
+	$query = 'SELECT randSalt FROM users';
+	$select_randsalt_query = $db->query($query);
+
+	$row = $select_randsalt_query->fetch();
+	$salt = $row['randSalt'];
+
+	$password = crypt($password, $salt);
+
+	if ("'{$password}'" === $user_password) {
 		$_SESSION['user_id'] = $user_id;
 		$_SESSION['username'] = $user_name;
 		$_SESSION['firstname'] = $user_firstname;
