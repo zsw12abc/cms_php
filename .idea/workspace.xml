@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e6f46337-3123-4e56-aa4e-e649d069ca87" name="Default" comment="add multi select(check box) in post admin page">
+    <list default="true" id="e6f46337-3123-4e56-aa4e-e649d069ca87" name="Default" comment="add alert to prevent empty comments">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/335723ce-600c-4833-90e6-af5894b3c09b.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/335723ce-600c-4833-90e6-af5894b3c09b.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/admin/includes/view_all_posts.php" afterPath="$PROJECT_DIR$/admin/includes/view_all_posts.php" />
-      <change beforePath="$PROJECT_DIR$/css/bootstrap.css" afterPath="$PROJECT_DIR$/css/bootstrap.css" />
-      <change beforePath="$PROJECT_DIR$/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/css/bootstrap.min.css" />
-      <change beforePath="$PROJECT_DIR$/includes/comment.php" afterPath="$PROJECT_DIR$/includes/comment.php" />
-      <change beforePath="$PROJECT_DIR$/js/bootstrap.js" afterPath="$PROJECT_DIR$/js/bootstrap.js" />
-      <change beforePath="$PROJECT_DIR$/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/js/bootstrap.min.js" />
+      <change beforePath="$PROJECT_DIR$/registration.php" afterPath="$PROJECT_DIR$/registration.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -68,26 +64,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="admin_navigation.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/includes/admin_navigation.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="45" column="58" lean-forward="false" selection-start-line="45" selection-start-column="33" selection-end-line="45" selection-end-column="58" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="posts.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/posts.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="51" lean-forward="true" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="post.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/post.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -146,16 +122,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bootstrap.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/bootstrap.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="14750">
-              <caret line="1595" column="21" lean-forward="false" selection-start-line="1595" selection-start-column="21" selection-end-line="1595" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="posts" pinned="false" current-in-tab="false">
         <entry file="das://table:/c303b512/335723ce-600c-4833-90e6-af5894b3c09b/cms.posts">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
@@ -174,17 +140,52 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="comment.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="comment.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/includes/comment.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="45" lean-forward="false" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
+            <state relative-caret-position="330">
+              <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
               <folding>
                 <marker date="1517204743363" expanded="true" signature="492:697" ph="INSERT INTO comments... " />
                 <marker date="1517204743363" expanded="true" signature="774:810" ph="SELECT * FRO... posts" />
                 <marker date="1517204743363" expanded="true" signature="954:1032" ph="UPDATE posts... " />
                 <marker date="1517204743363" expanded="true" signature="2025:2120" ph="SELECT * FRO... comments" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="registration.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/registration.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="4" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+              <folding>
+                <marker date="1517213106795" expanded="true" signature="329:355" ph="SELECT randS... users" />
+                <marker date="1517213106795" expanded="true" signature="523:2283" ph="..." />
+                <marker date="1517213106795" expanded="true" signature="549:2265" ph="..." />
+                <marker date="1517213106795" expanded="true" signature="581:2229" ph="..." />
+                <marker date="1517213106795" expanded="true" signature="611:2199" ph="..." />
+                <marker date="1517213106795" expanded="true" signature="666:2159" ph="..." />
+                <marker date="1517213106795" expanded="true" signature="710:2136" ph="..." />
+                <marker date="1517213106795" expanded="true" signature="870:2108" ph="..." />
+                <marker date="1517213106795" expanded="true" signature="923:1224" ph="..." />
+                <marker date="1517213106795" expanded="true" signature="1113:1189" ph="..." />
+                <marker date="1517213106795" expanded="true" signature="1277:1565" ph="..." />
+                <marker date="1517213106795" expanded="true" signature="1456:1530" ph="..." />
+                <marker date="1517213106795" expanded="true" signature="1618:1904" ph="..." />
+                <marker date="1517213106795" expanded="true" signature="1807:1869" ph="..." />
+                <marker date="1517213106795" expanded="true" signature="2024:2076" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="users" pinned="false" current-in-tab="false">
+        <entry file="das://table:/c303b512/335723ce-600c-4833-90e6-af5894b3c09b/cms.users">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
@@ -273,6 +274,7 @@
         <option value="$PROJECT_DIR$/admin/js/scripts.js" />
         <option value="$PROJECT_DIR$/admin/includes/view_all_posts.php" />
         <option value="$PROJECT_DIR$/includes/comment.php" />
+        <option value="$PROJECT_DIR$/registration.php" />
       </list>
     </option>
   </component>
@@ -328,24 +330,11 @@
             <path>
               <item name="cms" type="b2602c69:ProjectViewProjectNode" />
               <item name="cms" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="cms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cms" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="images" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="cms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cms" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="images" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="users" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="cms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cms" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="includes" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
             </path>
           </expand>
           <select />
@@ -358,7 +347,7 @@
     <property name="settings.editor.selected.configurable" value="SQL Dialects" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/shaowei/PhpstormProjects/cms/admin/functions.php" />
+    <property name="SearchEverywhereHistoryKey" value="crypt&#9;FILE&#9;jar:///Users/shaowei/Library/Application Support/JetBrains/Toolbox/apps/PhpStorm/ch-0/173.4301.34/PhpStorm.app/Contents/plugins/php/lib/php.jar!/stubs/mcrypt" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -381,23 +370,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.index.php">
+  <component name="RunManager" selected="JavaScript Debug.registration.php">
     <configuration name="database.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/cms/includes/database.php" />
     <configuration name="index.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" engineId="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" uri="http://localhost:63342/cms/index.php" />
     <configuration name="index.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/cms/admin/index.php" />
     <configuration name="post.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/cms/post.php" />
-    <list size="4">
+    <configuration name="registration.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/cms/registration.php" />
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.php" />
       <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.post.php" />
       <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.database.php" />
       <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.index.php (1)" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.registration.php" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.php" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index.php (1)" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.database.php" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.post.php" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.registration.php" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index.php" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.index.php (1)" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.database.php" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.post.php" />
       </list>
     </recent_temporary>
   </component>
@@ -418,21 +410,7 @@
       <workItem from="1516770237738" duration="32266000" />
       <workItem from="1516919767030" duration="21464000" />
       <workItem from="1516953328592" duration="3577000" />
-      <workItem from="1517178801428" duration="14074000" />
-    </task>
-    <task id="LOCAL-00021" summary="create html form and add php move file method">
-      <created>1516860221934</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1516860221934</updated>
-    </task>
-    <task id="LOCAL-00022" summary="add addPosts by PHP">
-      <created>1516861394642</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1516861394642</updated>
+      <workItem from="1517178801428" duration="16558000" />
     </task>
     <task id="LOCAL-00023" summary="move check Query to function">
       <created>1516862371900</created>
@@ -763,11 +741,25 @@
       <option name="project" value="LOCAL" />
       <updated>1517197934774</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="add alert to prevent empty comments">
+      <created>1517210208205</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1517210208205</updated>
+    </task>
+    <task id="LOCAL-00071" summary="add registration page">
+      <created>1517211214764</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1517211214765</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77781000" />
+    <option name="totallyTimeSpent" value="80265000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
@@ -855,8 +847,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="SHOW_UNVERSIONED_FILES_WHILE_COMMIT" value="false" />
-    <MESSAGE value="block draft post from showing" />
-    <MESSAGE value="add user display and update user function" />
     <MESSAGE value="add add user function and error fixed" />
     <MESSAGE value="change subtitle" />
     <MESSAGE value="add column title" />
@@ -880,7 +870,9 @@
     <MESSAGE value="add multi select(check box) in post admin page" />
     <MESSAGE value="update bootstrap file to 4.0 and change the style" />
     <MESSAGE value="add script to make all select box works" />
-    <option name="LAST_COMMIT_MESSAGE" value="add script to make all select box works" />
+    <MESSAGE value="add alert to prevent empty comments" />
+    <MESSAGE value="add registration page" />
+    <option name="LAST_COMMIT_MESSAGE" value="add registration page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -889,36 +881,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/includes/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="62" lean-forward="false" selection-start-line="22" selection-start-column="62" selection-end-line="22" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/navigation.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="68" lean-forward="false" selection-start-line="23" selection-start-column="68" selection-end-line="23" selection-end-column="68" />
-          <folding>
-            <marker date="1516926345786" expanded="true" signature="934:958" ph="SELECT * FRO... categories" />
-            <marker date="1516926345786" expanded="true" signature="1234:1263" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding>
-            <marker date="1517179415251" expanded="true" signature="233:269" ph="SELECT * FRO... users" />
-            <marker date="1517179415251" expanded="true" signature="233:270" ph="SELECT * FRO... users" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/includes/admin_navigation.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1192,13 +1154,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/c303b512/335723ce-600c-4833-90e6-af5894b3c09b/cms.users">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/includes/header.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -1360,6 +1315,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/mcrypt/mcrypt.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="57" lean-forward="true" selection-start-line="20" selection-start-column="57" selection-end-line="20" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_7.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="239" column="9" lean-forward="false" selection-start-line="239" selection-start-column="9" selection-end-line="239" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/c303b512/335723ce-600c-4833-90e6-af5894b3c09b/cms.users">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
     <entry file="das://table:/c303b512/335723ce-600c-4833-90e6-af5894b3c09b/cms.posts">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -1376,13 +1354,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/includes/comment.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="45" lean-forward="false" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
+        <state relative-caret-position="330">
+          <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
           <folding>
             <marker date="1517204743363" expanded="true" signature="492:697" ph="INSERT INTO comments... " />
             <marker date="1517204743363" expanded="true" signature="774:810" ph="SELECT * FRO... posts" />
             <marker date="1517204743363" expanded="true" signature="954:1032" ph="UPDATE posts... " />
             <marker date="1517204743363" expanded="true" signature="2025:2120" ph="SELECT * FRO... comments" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/registration.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="4" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+          <folding>
+            <marker date="1517213106795" expanded="true" signature="329:355" ph="SELECT randS... users" />
+            <marker date="1517213106795" expanded="true" signature="523:2283" ph="..." />
+            <marker date="1517213106795" expanded="true" signature="549:2265" ph="..." />
+            <marker date="1517213106795" expanded="true" signature="581:2229" ph="..." />
+            <marker date="1517213106795" expanded="true" signature="611:2199" ph="..." />
+            <marker date="1517213106795" expanded="true" signature="666:2159" ph="..." />
+            <marker date="1517213106795" expanded="true" signature="710:2136" ph="..." />
+            <marker date="1517213106795" expanded="true" signature="870:2108" ph="..." />
+            <marker date="1517213106795" expanded="true" signature="923:1224" ph="..." />
+            <marker date="1517213106795" expanded="true" signature="1113:1189" ph="..." />
+            <marker date="1517213106795" expanded="true" signature="1277:1565" ph="..." />
+            <marker date="1517213106795" expanded="true" signature="1456:1530" ph="..." />
+            <marker date="1517213106795" expanded="true" signature="1618:1904" ph="..." />
+            <marker date="1517213106795" expanded="true" signature="1807:1869" ph="..." />
+            <marker date="1517213106795" expanded="true" signature="2024:2076" ph="..." />
           </folding>
         </state>
       </provider>

@@ -1078,6 +1078,7 @@
     <column id="261" parent="230" name="randSalt">
       <Position>9</Position>
       <DataType>varchar(255)|0</DataType>
+      <DefaultExpression>&apos;$2y$10$iusesomecrazystring22&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="262" parent="230" name="user_date">

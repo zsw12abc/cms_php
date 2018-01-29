@@ -2,6 +2,22 @@
 <?php include 'includes/header.php'; ?>
 
 
+<?php
+if (isset($_POST['submit'])) {
+	$username = $_POST['username'];
+	$email = $_POST['email'];
+	$password = $_POST['password'];
+
+	$username = $db->quote($username);
+	$email = $db->quote($email);
+	$password = $db->quote($password);
+
+	$query = 'SELECT randSalt FROM users';
+	$select_randsalt_query = $db->query($query);
+
+}
+?>
+
 <!-- Navigation -->
 
 <?php include 'includes/navigation.php'; ?>
