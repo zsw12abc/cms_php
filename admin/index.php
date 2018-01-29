@@ -29,21 +29,33 @@
             <!-- /.row -->
 
 			<?php
-			$posts_query = 'SELECT * FROM posts';
+			$posts_query = "SELECT * FROM posts WHERE post_status = 'published'";
 			$posts = $db->query($posts_query);
-			$postsNumber = $posts->rowCount();
+			$postsCount = $posts->rowCount();
 
-			$comments_query = 'SELECT * FROM comments';
+			$posts_draft_query = "SELECT * FROM posts WHERE post_status = 'draft'";
+			$posts_draft = $db->query($posts_draft_query);
+			$postsCount_draft = $posts_draft->rowCount();
+
+			$comments_query = "SELECT * FROM comments WHERE comment_status = 'approved'";
 			$comments = $db->query($comments_query);
-			$commentsNumber = $comments->rowCount();
+			$commentsCount = $comments->rowCount();
 
-			$users_query = 'SELECT * FROM users';
+			$comments_disapproved_query = "SELECT * FROM comments WHERE comment_status = 'disapproved'";
+			$comments_disapproved = $db->query($comments_disapproved_query);
+			$commentsCount_disapproved = $comments_disapproved->rowCount();
+
+			$users_query = "SELECT * FROM users WHERE user_role = 'user'";
 			$users = $db->query($users_query);
-			$usersNumber = $users->rowCount();
+			$usersCount = $users->rowCount();
+
+			$users_admin_query = "SELECT * FROM users WHERE user_role = 'admin'";
+			$users_admin = $db->query($users_admin_query);
+			$usersCount_admin = $users_admin->rowCount();
 
 			$categories_query = 'SELECT * FROM categories';
 			$categories = $db->query($categories_query);
-			$categoriesNumber = $categories->rowCount();
+			$categoriesCount = $categories->rowCount();
 			?>
 
             <div class="row">
@@ -55,7 +67,7 @@
                                     <i class="fa fa-file-text fa-5x"></i>
                                 </div>
                                 <div class="col-xs-9 text-right">
-                                    <div class='huge'><?php echo $postsNumber; ?></div>
+                                    <div class='huge'><?php echo $postsCount; ?></div>
                                     <div>Posts</div>
                                 </div>
                             </div>
@@ -77,7 +89,7 @@
                                     <i class="fa fa-comments fa-5x"></i>
                                 </div>
                                 <div class="col-xs-9 text-right">
-                                    <div class='huge'><?php echo $commentsNumber ?></div>
+                                    <div class='huge'><?php echo $commentsCount ?></div>
                                     <div>Comments</div>
                                 </div>
                             </div>
@@ -99,7 +111,7 @@
                                     <i class="fa fa-user fa-5x"></i>
                                 </div>
                                 <div class="col-xs-9 text-right">
-                                    <div class='huge'><?php echo $usersNumber ?></div>
+                                    <div class='huge'><?php echo $usersCount ?></div>
                                     <div> Users</div>
                                 </div>
                             </div>
@@ -121,7 +133,7 @@
                                     <i class="fa fa-list fa-5x"></i>
                                 </div>
                                 <div class="col-xs-9 text-right">
-                                    <div class='huge'><?php echo $categoriesNumber ?></div>
+                                    <div class='huge'><?php echo $categoriesCount ?></div>
                                     <div>Categories</div>
                                 </div>
                             </div>
@@ -159,8 +171,8 @@
         var data = google.visualization.arrayToDataTable([
             ['Data', 'Count'],
 			<?php
-			$elements = ['Active Posts', 'Comments', 'Users', 'Categories'];
-			$elements_count = [$postsNumber, $commentsNumber, $usersNumber, $categoriesNumber];
+			$elements = ['Active Posts', 'Draft Posts', 'Comments', 'Disapproved Comments', 'Admin', 'Users', 'Categories'];
+			$elements_count = [$postsCount, $postsCount_draft, $commentsCount, $commentsCount_disapproved, $usersCount_admin, $usersCount, $categoriesCount];
 			$num = count($elements);
 			for ($i = 0; $i < $num; $i++) {
 				echo "['{$elements[$i]}',{$elements_count[$i]}],";
