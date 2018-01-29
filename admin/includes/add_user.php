@@ -12,6 +12,14 @@ if (isset($_POST['create_user'])) {
 
 	move_uploaded_file($user_image_temp, "../images/users/$user_image");
 
+	$query = 'SELECT randSalt FROM users';
+	$select_randsalt_query = $db->query($query);
+
+	$row = $select_randsalt_query->fetch();
+	$salt = $row['randSalt'];
+
+	$user_password = crypt($user_password, $salt);
+
 	$add_users_query = "INSERT INTO 
 users(username, 
 user_password, 

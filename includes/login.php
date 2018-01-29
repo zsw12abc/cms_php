@@ -10,7 +10,7 @@ if (isset($_POST['login'])) {
 	$users_query = 'SELECT * FROM users WHERE username = ' . $username;
 	$users = $db->query($users_query);
 	$user = $users->fetch();
-	$user_password = $db->quote($user['user_password']);
+	$user_password = $user['user_password'];
 	$user_id = $user['user_id'];
 	$user_name = $user['username'];
 	$user_image = $user['user_image'];
@@ -25,9 +25,12 @@ if (isset($_POST['login'])) {
 	$row = $select_randsalt_query->fetch();
 	$salt = $row['randSalt'];
 
-	$password = crypt($password, $salt);
+//	echo($hash_password = crypt($password, $salt));
+//	var_dump(crypt($password, $hash_password));
 
-	if ("'{$password}'" === $user_password) {
+	$password = crypt($password, $user_password);
+
+	if ($password === $user_password) {
 		$_SESSION['user_id'] = $user_id;
 		$_SESSION['username'] = $user_name;
 		$_SESSION['firstname'] = $user_firstname;

@@ -13,7 +13,6 @@ if (isset($_GET['delete'])) {
     <tr>
         <th>ID</th>
         <th>Username</th>
-        <th>Password</th>
         <th>First Name</th>
         <th>Last Name</th>
         <th>Email</th>
@@ -49,7 +48,6 @@ if (isset($_GET['delete'])) {
         <tr>
             <td><?php echo $user_id ?></td>
             <td><?php echo $username; ?></td>
-            <td><?php echo $user_password; ?></td>
             <td><?php echo $user_firstname ?></td>
             <td><?php echo $user_lastname ?></td>
             <td><?php echo $user_email ?></td>

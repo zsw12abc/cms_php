@@ -36,6 +36,14 @@ if (isset($_POST['update_user'])) {
 		$user_image = $row['user_image'];
 	}
 
+	$query = 'SELECT randSalt FROM users';
+	$select_randsalt_query = $db->query($query);
+
+	$row = $select_randsalt_query->fetch();
+	$salt = $row['randSalt'];
+
+	$user_password = crypt($user_password, $salt);
+
 	$update_users_query = "UPDATE users SET 
 username = '{$username}', 
 user_password='{$user_password}', 
