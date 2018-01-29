@@ -10,7 +10,7 @@ if (isset($_GET['delete'])) {
 
 <form action="" method="post">
     <table class="table table-bordered table-hover">
-        <div id="bulkOptionContainer" class="col-xs-4" style="padding-left: 0">
+        <div id="bulkOptionContainer" class="col-xs-4" style="padding: 0">
             <select name="posts_filter_status" id="" class="form-control">
                 <option value="">Select Options</option>
                 <option value="published">Published</option>
