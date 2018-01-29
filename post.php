@@ -37,12 +37,22 @@
                     <img class="img-responsive" src="images/<?php echo $post_image ?>" alt="">
                     <hr>
                     <p><?php echo $post_content ?></p>
+					<?php
+					if (isset($_SESSION)):
+						if ($_SESSION['user_role'] === 'admin') :
+							?>
+                            <a href="admin/posts.php?source=edit_post&id=<?php echo $post_id ?>"
+                               class="btn btn-primary">Edit
+                                Post</a>
+						<?php
+						endif;
+					endif;
+					?>
                     <hr>
 				<?php
 				endwhile;
 			endif;
 			?>
-
 			<?php
 			include 'includes/comment.php';
 			?>
