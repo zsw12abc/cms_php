@@ -36,6 +36,7 @@ if (isset($_GET['delete'])) {
             <th>Date</th>
             <th>Delete</th>
             <th>Edit</th>
+            <th>View</th>
         </tr>
         </thead>
         <tbody>
@@ -97,6 +98,7 @@ if (isset($_GET['delete'])) {
                 <td><?php echo $post_date ?></td>
                 <td><a href='posts.php?delete=<?php echo $post_id ?>'>Delete</td>
                 <td><a href='posts.php?source=edit_post&id=<?php echo $post_id ?>'>Edit</td>
+                <td><a href='../post.php?id=<?php echo $post_id ?>'>View Post</td>
             </tr>
 		<?php
 		endwhile;

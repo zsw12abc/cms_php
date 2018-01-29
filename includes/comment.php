@@ -7,9 +7,13 @@ if (isset($_POST['comment_submit'])) {
 	$comment_content = $_POST['comment_content'];
 //	$comment_status = $_POST['comment_status'];
 	$comment_date = date('d-m-y');
-	$add_comment_query = "INSERT INTO comments(comment_post_id, comment_author, comment_email, comment_content, comment_date)"
-		. "VALUES('{$comment_post_id}', '{$comment_author}', '{$comment_email}', '{$comment_content}', now())";
-	$add_comment = $db->query($add_comment_query);
+	if (empty($comment_author) || empty($comment_email) || empty($comment_content)) :?>
+        <script>alert("Field cannot be empty!")</script>
+	<?php else :
+		$add_comment_query = "INSERT INTO comments(comment_post_id, comment_author, comment_email, comment_content, comment_date)"
+			. "VALUES('{$comment_post_id}', '{$comment_author}', '{$comment_email}', '{$comment_content}', now())";
+		$add_comment = $db->query($add_comment_query);
+	endif;
 
 	$post_query = 'SELECT * FROM posts WHERE post_id = ' . $comment_post_id;
 	$post = $db->query($post_query)->fetch();
