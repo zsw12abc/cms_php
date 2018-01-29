@@ -11,10 +11,24 @@ if (isset($_POST['submit'])) {
 	$username = $db->quote($username);
 	$email = $db->quote($email);
 	$password = $db->quote($password);
+	if (!empty($username) && !empty($email) && !empty($password)) {
 
-	$query = 'SELECT randSalt FROM users';
-	$select_randsalt_query = $db->query($query);
 
+		$query = 'SELECT randSalt FROM users';
+		$select_randsalt_query = $db->query($query);
+
+		$row = $select_randsalt_query->fetch();
+		$salt = $row['randSalt'];
+
+		$query = "INSERT INTO users (username, user_email, user_password,user_date, user_role) VALUES ({$username},{$email},{$password}, now(), 'user')";
+//		echo $query;
+		$register_user_query = $db->query($query);
+		$message = 'Your Registration has been submitted';
+	} else {
+		$message = 'Fields can not be empty';
+	}
+} else {
+	$message = '';
 }
 ?>
 
@@ -25,7 +39,6 @@ if (isset($_POST['submit'])) {
 
 <!-- Page Content -->
 <div class="container">
-
     <section id="login">
         <div class="container">
             <div class="row">
@@ -33,6 +46,7 @@ if (isset($_POST['submit'])) {
                     <div class="form-wrap">
                         <h1>Register</h1>
                         <form role="form" action="registration.php" method="post" id="login-form" autocomplete="off">
+                            <h6><?php echo $message ?></h6>
                             <div class="form-group">
                                 <label for="username" class="sr-only">username</label>
                                 <input type="text" name="username" id="username" class="form-control"
