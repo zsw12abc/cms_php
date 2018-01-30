@@ -35,6 +35,8 @@ if (isset($_SESSION['user_role'])) {
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
+    <link rel="stylesheet" href="css/loader.css">
+
     <!--    Full featured web editing-->
     <script src="https://cloud.tinymce.com/stable/tinymce.min.js"></script>
     <script>tinymce.init({selector: 'textarea'});</script>
